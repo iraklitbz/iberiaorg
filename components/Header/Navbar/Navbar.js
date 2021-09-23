@@ -16,13 +16,11 @@ const Navbar = () => {
           <div className="header__nav-inner">
             <div className="header__label">Main menu</div>
             <ul className="header__list">
-              <li className="header__item"><a href="#0" className="header__link">About</a></li>
-              <li className="header__item"><a href="#0" className="header__link">Solutions</a></li>
-              <li className="header__item"><a href="#0" className="header__link" aria-current="page">Resources</a></li>
-              <li className="header__item"><a href="#0" className="header__link">Pricing</a></li>
-              <li className="header__item"><a href="#0" className="header__link">Contact</a></li>
+              <li className="header__item"><a href="#0" className="header__link" aria-current="page">Inicio</a></li>
+              <li className="header__item"><a href="#0" className="header__link">Sobre nosotros</a></li>
+              <li className="header__item"><a href="#0" className="header__link" >Que hacemos</a></li>
               <li className="header__item header__item--divider" aria-hidden="true"></li>
-              <li className="header__item"><a href="#0" className="header__nav-btn btn btn--primary">Download</a></li>
+              <li className="header__item"><a href="#0" className="header__nav-btn btn btn--primary">Contacto</a></li>
             </ul>
           </div>
         </nav>

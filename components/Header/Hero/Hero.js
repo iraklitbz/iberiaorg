@@ -7,13 +7,13 @@ const Hero = () => {
           This is a Label</div>
 
         <div className="text-component margin-bottom-sm reveal-fx reveal-fx--translate-up reveal-fx--is-visible" data-reveal-fx-delay="100" data-reveal-fx-delta="0">
-          <h1 className="text-xxxxl text-uppercase">Art <em>&amp;</em> Clothing</h1>
+          <h1 className="text-xxxxl text-uppercase">Art <em>&amp;</em> Craft</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero aliquam, natus quae architecto hic
             quod!</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-sm reveal-fx reveal-fx--translate-up reveal-fx--is-visible" data-reveal-fx-delay="200" data-reveal-fx-delta="0">
-          <a href="shop.html" className="btn btn--subtle">Shop Now</a>
+          <a href="shop.html" className="btn btn--subtle">Contactar</a>
         </div>
       </div>
     </div>
