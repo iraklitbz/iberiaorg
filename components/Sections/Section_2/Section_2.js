@@ -1,3 +1,4 @@
+import Image from "next/image";
 const Section_2 = () => {
   return ( 
     <section className="gallery-v2 margin-bottom-xxl">
@@ -21,7 +22,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <img src="https://codyhouse.co/demo-templates/mercurio/assets/img/product-card-v2-img-1a.jpg" loading="lazy" alt="Product preview image" />
+                    <Image src="/img/product-card-v2-img-1a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
@@ -37,7 +38,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <img src="https://codyhouse.co/demo-templates/mercurio/assets/img/product-card-v2-img-2a.jpg" loading="lazy" alt="Product preview image" />
+                    <Image src="/img/product-card-v2-img-2a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
@@ -53,7 +54,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <img src="https://codyhouse.co/demo-templates/mercurio/assets/img/product-card-v2-img-4a.jpg" loading="lazy" alt="Product preview image" />
+                    <Image src="/img/product-card-v2-img-4a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
@@ -69,7 +70,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <img src="https://codyhouse.co/demo-templates/mercurio/assets/img/product-card-v2-img-5a.jpg" loading="lazy" alt="Product preview image" />
+                    <Image src="/img/product-card-v2-img-5a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
