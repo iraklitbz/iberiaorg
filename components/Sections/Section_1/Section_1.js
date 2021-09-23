@@ -33,7 +33,7 @@ const Section_1 = () => {
 
       <figure className="bg-decoration-v2 z-index-1 blend-overlay flip-x" aria-hidden="true">
         <svg className="bg-decoration-v2__svg color-contrast-higher opacity-30%" viewBox="0 0 1920 450" fill="none">
-          <g stroke="currentColor" stroke-width="2">
+          <g stroke="currentColor" strokeWidth="2">
             <path d="M1750 135C1750 153.565 1742.63 171.37 1729.5 184.497C1716.37 197.625 1698.57 205 1680 205C1661.43 205 1643.63 197.625 1630.5 184.497C1617.37 171.37 1610 153.565 1610 135L1750 135Z"></path>
             <path d="M1750 275C1750 293.565 1742.63 311.37 1729.5 324.497C1716.37 337.625 1698.57 345 1680 345C1661.43 345 1643.63 337.625 1630.5 324.497C1617.37 311.37 1610 293.565 1610 275L1750 275Z"></path>
             <path d="M1610 275C1610 256.435 1617.37 238.63 1630.5 225.503C1643.63 212.375 1661.43 205 1680 205C1698.57 205 1716.37 212.375 1729.5 225.503C1742.63 238.63 1750 256.435 1750 275L1610 275Z"></path>

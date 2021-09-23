@@ -1,6 +1,6 @@
 import { useEffect, Fragment } from "react";
 import "../scss/index.scss";
-import Head from "next/head";
+import Script from 'next/script'
 
 
 
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   return (
       <Fragment>
          <Component {...pageProps} />
-         <script src="https://unpkg.com/codyhouse-framework/main/assets/js/util.js"></script>
+         <Script src="https://unpkg.com/codyhouse-framework/main/assets/js/util.js"></Script>
       </Fragment>
   )
 }
