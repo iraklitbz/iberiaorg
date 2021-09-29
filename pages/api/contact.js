@@ -1,31 +1,28 @@
 export default function (req, res) {
-  require("dotenv").config();
-  let nodemailer = require("nodemailer");
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
-    secure: false,
-    auth: {
-      user: "iraklitbz@gmail.com",
-      pass: 'Adob31d123',
-    }
-   
+  require('dotenv').config();
+  const nodemailer = require('nodemailer');
+  // Step 1
+  let transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+          user: 'iraklitbz@gmail.com' || 'abc@gmail.com', // TODO: your gmail account
+          pass: 'Adob31d123' || '1234' // TODO: your gmail password
+      }
   });
 
-  
-  const mailData = {
-    from: "iraklitbz@gmail.com",
-    to: "your email",
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message + " | Sent from: " + req.body.email,
-    html: `<div>${req.body.texto}</div><p>Sent from:
-    ${req.body.email}</p>`,
+  // Step 2
+  let mailOptions = {
+      from: 'abc@gmail.com', // TODO: email sender
+      to: 'cba@gmail.com', // TODO: email receiver
+      subject: 'Nodemailer - Test',
+      text: req.body.name
   };
 
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  // Step 3
+  transporter.sendMail(mailOptions, (err, data) => {
+      if (err) {
+          return console.log('Error occurs');
+      }
+      return console.log('Email sent!!!');
   });
-
-  res.status(200);
 }
