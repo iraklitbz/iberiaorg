@@ -15,7 +15,11 @@ export default function (req, res) {
       from: req.body.email, // TODO: email sender
       to: 'iraklitbz@gmail.com', // TODO: email receiver
       subject: `Email recibido de ${req.body.email} desde el formulario de la web`,
-      text: `${req.body.name} pregunta lo siguiente:` + <br/> + req.body.texto
+      html: `<div> 
+                <p>${req.body.name} pregunta lo siguiente:</p> <br/>  
+                <p>${req.body.texto}</p>
+              </div>  
+            `
   };
 
   // Step 3
