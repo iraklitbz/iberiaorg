@@ -12,10 +12,10 @@ export default function (req, res) {
 
   // Step 2
   let mailOptions = {
-      from: 'abc@gmail.com', // TODO: email sender
-      to: 'cba@gmail.com', // TODO: email receiver
-      subject: 'Nodemailer - Test',
-      text: req.body.name
+      from: req.body.email, // TODO: email sender
+      to: 'iraklitbz@gmail.com', // TODO: email receiver
+      subject: `Email recibido de ${req.body.email} desde el formulario de la web`,
+      text: `${req.body.name} pregunta lo siguiente:` + <br/> + req.body.texto
   };
 
   // Step 3
