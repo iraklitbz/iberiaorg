@@ -5,8 +5,8 @@ export default function (req, res) {
   let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-          user: 'iraklitbz@gmail.com' || 'abc@gmail.com', // TODO: your gmail account
-          pass: 'Adob31d123' || '1234' // TODO: your gmail password
+          user: 'iraklitbz@gmail.com',
+          pass: process.env.password
       }
   });
 
