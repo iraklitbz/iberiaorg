@@ -48,10 +48,13 @@ export default function (req, res) {
   transporter.sendMail(mailData, function (err, info) {
       if(err)
         console.log(err)
-      else
-        console.log(info);
+        else {
+          callback(null, {
+          statusCode: 200,
+          body: JSON.stringify({
+                 'result': 'success'
+              })
+      });
+      }
   })
-
-  console.log(req.body)
-  res.send('success')
 }
