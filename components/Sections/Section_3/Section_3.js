@@ -1,3 +1,4 @@
+import Link from "next/link";
 const Section_3 = () => {
   return ( 
     <section className="position-relative z-index-1 margin-bottom-xxl">
@@ -12,39 +13,43 @@ const Section_3 = () => {
           <div className="grid gap-sm">
             <div>
               <div className="banner overflow-hidden">
-                <a href="#0" className="text-decoration-none" aria-label="Shop Now">
-                  <div className="grid flex-row-reverse@md">
-                    <div className="col-6@md overflow-hidden" aria-hidden="true">
-                      <div className="banner__figure banner__figure1 width-100%"></div>
-                    </div>
-              
-                    <div className="col-6@md">
-                      <div className="text-component v-space-md height-100% flex flex-column padding-md padding-lg@md">
-                        <h2>Sobre Nosotros</h2>
-                        
+                <Link href="/Empresa" className="text-decoration-none" aria-label="Shop Now">
+                  <a className="text-decoration-none">
+                    <div className="grid flex-row-reverse@md">
+                      <div className="col-6@md overflow-hidden" aria-hidden="true">
+                        <div className="banner__figure banner__figure1 width-100%"></div>
+                      </div>
+                
+                      <div className="col-6@md">
+                        <div className="text-component v-space-md height-100% flex flex-column padding-md padding-lg@md">
+                          <h2>Sobre Nosotros</h2>
+                          
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </Link>
               </div>
             </div>
 
             <div>
               <div className="banner overflow-hidden">
-                <a href="#0" className="text-decoration-none" aria-label="Shop Now">
-                  <div className="grid flex-row-reverse@md">
-                    <div className="col-6@md overflow-hidden" aria-hidden="true">
-                      <div className="banner__figure banner__figure2 width-100%"></div>
-                    </div>
-              
-                    <div className="col-6@md">
-                      <div className="text-component v-space-md height-100% flex flex-column padding-md padding-lg@md">
-                        <h2>Contacto</h2>
-                       
+                <Link href="/Contacto">
+                  <a className="text-decoration-none">
+                    <div className="grid flex-row-reverse@md">
+                      <div className="col-6@md overflow-hidden" aria-hidden="true">
+                        <div className="banner__figure banner__figure2 width-100%"></div>
+                      </div>
+                
+                      <div className="col-6@md">
+                        <div className="text-component v-space-md height-100% flex flex-column padding-md padding-lg@md">
+                          <h2>Contacto</h2>
+                        
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

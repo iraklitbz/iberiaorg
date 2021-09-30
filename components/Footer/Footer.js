@@ -1,3 +1,4 @@
+import Link from "next/link";
 const Footer = () => {
   return ( 
         <footer className="main-footer bg-contrast-lower padding-top-xl padding-bottom-md">
@@ -75,8 +76,8 @@ const Footer = () => {
             <div className="main-footer__colophon border-top padding-top-xs margin-top-lg">
               <div className="text-sm text-xs@md color-contrast-medium flex gap-xs">
                 <span>© myWebsite</span>
-                <a href="basic-page.html" className="color-contrast-high">Terms</a>
-                <a href="basic-page.html" className="color-contrast-high">Privacy</a>
+                <Link href="/aviso-legal" className="color-contrast-high">Aviso legal</Link>
+                <Link href="/politica-de-privacidad" className="color-contrast-high">Privacy</Link>
               </div>
 
               <div className="flex items-center gap-xs">
