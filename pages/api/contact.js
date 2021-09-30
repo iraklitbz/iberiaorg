@@ -6,8 +6,9 @@ export default function (req, res) {
     port: 465,     
     host: "smtp.gmail.com",
        auth: {
+            type: 'OAuth2',
             user: process.env.email,
-            pass: process.env.password,
+            pass: process.env.password
          },
     secure: false,
   });
