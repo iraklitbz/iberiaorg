@@ -30,7 +30,7 @@ const ContactoForm = () => {
     
      
       /*ENVIAR FORMULARIO*/
-      fetch('/api/contact', {
+      fetch('/api/sendmail', {
         method: 'POST',
         headers: {
           'Accept': 'application/json, text/plain, */*',
