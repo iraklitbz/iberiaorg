@@ -10,7 +10,8 @@ exports.handler = function(event, context, callback) {
         auth:{
           user: process.env.email,
           pass: process.env.password,
-    }
+        },
+        secure: true
     });
 
     transporter.sendMail({
