@@ -10,7 +10,7 @@ export default function (req, res) {
             user: process.env.email,
             pass: process.env.password
          },
-    secure: false,
+    secure: true,
   });
   
   const mailData = {
