@@ -7,11 +7,16 @@ exports.handler = function(event, context, callback) {
     let transporter = nodemailer.createTransport({
         port: 465,     
         host: "smtp.gmail.com",
+        secure: true,
         auth:{
+          type: 'OAuth2',
           user: process.env.email,
           pass: process.env.password,
-        },
-        secure: true
+          clientId: process.env.clientId,
+          clientSecret: process.env.clientSecret,
+          refreshToken: process.env.refreshToken,
+          accessToken: process.env.accessToken,
+        }
     });
 
     transporter.sendMail({
