@@ -5,23 +5,18 @@ exports.handler = function(event, context, callback) {
     let data = JSON.parse(event.body)
 
     let transporter = nodemailer.createTransport({
-        port: 465,     
-        host: "smtp.gmail.com",
+        host: 'smtp.ethereal.email',
+        port: 465,
         secure: true,
         auth:{
-          type: 'OAuth2',
           user: process.env.email,
           pass: process.env.password,
-          clientId: process.env.clientId,
-          clientSecret: process.env.clientSecret,
-          refreshToken: process.env.refreshToken,
-          accessToken: process.env.accessToken,
         }
     });
 
     transporter.sendMail({
         from: data.email,
-        to: process.env.email,
+        to: process.env.toEmail,
         subject: `Email recibido de ${data.email} desde el formulario de la web`,
         html: `
                 <table style="min-width:348px" width="100%;" height="100%" cellspacing="0" cellpadding="0" border="0">
