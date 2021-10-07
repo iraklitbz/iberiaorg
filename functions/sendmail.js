@@ -5,10 +5,11 @@ exports.handler = function(event, context, callback) {
     let data = JSON.parse(event.body)
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 465,
-        secure: true,
+        host: 'smtp.ionos.es',
+        port: 587,
+        secure: false,
         auth:{
+          type: 'login',
           user: process.env.email,
           pass: process.env.password,
         }
