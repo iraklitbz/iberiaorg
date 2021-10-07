@@ -8,6 +8,7 @@ exports.handler = function(event, context, callback) {
         host: 'smtp.ionos.es',
         port: 587,
         secure: false,
+        authMethod: 'PLAIN',
         transportMethod: 'SMTP',
         tls:{
           rejectUnauthorized:false
