@@ -5,7 +5,7 @@ exports.handler = function(event, context, callback) {
     let data = JSON.parse(event.body)
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.ionos.es',
+        host: process.env.hostname,
         port: 587,
         secure: false,
         authMethod: 'PLAIN',
