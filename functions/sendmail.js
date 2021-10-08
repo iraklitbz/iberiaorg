@@ -15,8 +15,8 @@ exports.handler = function(event, context, callback) {
         },
         auth:{
           type: 'auth',
-          user: process.env.email,
-          pass: process.env.password,
+          user: 'info@administracionesvesta.com',
+          pass: 'Dominio2010-',
         }
     });
 
