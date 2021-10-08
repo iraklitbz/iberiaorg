@@ -11,7 +11,8 @@ exports.handler = function(event, context, callback) {
         authMethod: 'PLAIN',
         transportMethod: 'SMTP',
         tls:{
-          rejectUnauthorized:false
+          rejectUnauthorized: false,
+          ciphers:'SSLv3'
         },
         auth:{
           type: 'auth',
