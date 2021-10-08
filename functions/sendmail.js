@@ -11,19 +11,19 @@ exports.handler = function(event, context, callback) {
         authMethod: 'PLAIN',
         transportMethod: 'SMTP',
         tls:{
-          rejectUnauthorized: false,
-          ciphers:'SSLv3'
+          rejectUnauthorized:false,
+           ciphers:'SSLv3'
         },
         auth:{
           type: 'auth',
-          user: 'info@administracionesvesta.com',
-          pass: 'Dominio2010-',
+          user: process.env.email,
+          pass: process.env.password,
         }
     });
 
     transporter.sendMail({
         from: data.email,
-        to: 'info@administracionesvesta.com',
+        to: process.env.toEmail,
         subject: `Email recibido de ${data.email} desde el formulario de la web`,
         html: `
                 <table style="min-width:348px" width="100%;" height="100%" cellspacing="0" cellpadding="0" border="0">
