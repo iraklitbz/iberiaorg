@@ -23,7 +23,7 @@ exports.handler = function(event, context, callback) {
 
     transporter.sendMail({
         from: data.email,
-        to: process.env.toEmail,
+        to: 'info@administracionesvesta.com',
         subject: `Email recibido de ${data.email} desde el formulario de la web`,
         html: `
                 <table style="min-width:348px" width="100%;" height="100%" cellspacing="0" cellpadding="0" border="0">
