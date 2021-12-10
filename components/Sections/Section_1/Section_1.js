@@ -6,7 +6,7 @@ const Section_1 = () => {
         <article className="t-article-v4 padding-md padding-x-lg@md padding-y-xl@md shadow-xs" data-theme="default">
           <div className="text-component text-center line-height-lg v-space-xxl max-width-xs margin-x-auto">
             <p className="text-xs text-uppercase letter-spacing-lg color-contrast-medium">Our Story</p>
-            <h1 className="text-xxxl">How a simple idea changed my life</h1>
+            <h1 className="text-xl">El reemplazo de administrador es un trámite fácil que gestionaremos sin gasto, no tengas miedo al cambio.</h1>
           </div>
 
           <div className="t-article-v4__divider margin-y-lg" aria-hidden="true"><span></span></div>

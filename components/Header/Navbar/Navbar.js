@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
               <li className="header__item">
                 <Link href="/Empresa">
-                  <a className={`header__link ${router.pathname == "/Empresa" ? "active" : ""}`}>Que hacemos</a>
+                  <a className={`header__link ${router.pathname == "/Empresa" ? "active" : ""}`}>Sobre nosotros</a>
                 </Link>
               </li>
               <li className="header__item">

@@ -7,9 +7,17 @@ const Section_2 = () => {
             <div className="grid gap-sm">
               <div className="col-6@lg offset-3@lg">
                 <div className="text-component line-height-lg">
-                  <h1 className="text-xxxl">Art &amp; Craft</h1>
+                  <h1 className="text-xl">¿Por qué trabajar con nosotros?</h1>
       
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sed tenetur rem quam nihil dolorum expedita maxime nisi recusandae sequi magni culpa fuga accusamus eveniet fugiat ipsum ab consequuntur.</p>
+                  <p>Llevamos una total transparencia de las gestiones
+                    <br />
+                    Ponemos al día las cuentas de su comunidad
+                    <br />
+                    Precio competitivo en el mercado
+                    <br />
+                    Sin permanencia
+                  </p>
+                 
       
               
                 </div>
@@ -27,7 +35,7 @@ const Section_2 = () => {
                 </a>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Product Name</a></h2>
+                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Administración de Fincas</a></h2>
 
                   
                 </div>
@@ -43,7 +51,7 @@ const Section_2 = () => {
                 </a>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Product Name</a></h2>
+                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Gestión externa de seguros</a></h2>
 
                  
                 </div>
@@ -59,7 +67,7 @@ const Section_2 = () => {
                 </a>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Product Name</a></h2>
+                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Gestión de alquileres</a></h2>
 
                  
                 </div>
@@ -75,7 +83,7 @@ const Section_2 = () => {
                 </a>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Product Name</a></h2>
+                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Trámites administrativos</a></h2>
 
                   
                 </div>

@@ -7,7 +7,7 @@ const Section_6 = () => {
               <div className="grid justify-center">
                 <div className="col-10 col-8@md">
                   <div className="feature-v12__offset-item text-center padding-bottom-md padding-bottom-0@md">
-                    <h1 className="text-xxxl@sm text-xxxxl@lg reveal-fx reveal-fx--translate-up reveal-fx--is-visible">A stronger athlete, a better yourself</h1>
+                    <h1 className="text-xxxl@sm text-xxxxl@lg reveal-fx reveal-fx--translate-up reveal-fx--is-visible">Sobre nosotros</h1>
                   </div>
                 </div>
           

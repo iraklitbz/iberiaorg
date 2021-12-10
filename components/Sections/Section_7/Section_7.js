@@ -5,16 +5,18 @@ const Section_7 = () => {
         <div className="container max-width-lg">
           <div className="grid gap-sm">
             <div className="col-8@md">
-              <div className="color-primary margin-bottom-sm"> Lorem, ipsum dolor.</div>
+              <div className="color-primary margin-bottom-sm"> Acerca de Administraciones Vesta</div>
     
-              <h1 className="text-xxxl">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+              <h1 className="text-xxxl">Administraciones Vesta es una empresa líder en administración de fincas y gestión de lapropiedad</h1>
             </div>
     
             <div className="col-10 offset-2 col-8@lg padding-y-lg">
               <div className="text-component line-height-lg v-space-lg">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime, maiores reiciendis fuga animi, quidem similique perspiciatis neque doloremque ut veniam modi earum non iste assumenda voluptates impedit velit debitis, voluptas aspernatur dolore incidunt pariatur beatae?</p>
-    
-                <p className="bg-primary bg-opacity-10% padding-md border-left border-3 border-primary">Cum debitis aut voluptatum numquam architecto ratione unde, vitae neque facere obcaecati, quasi cupiditate pariatur delectus facilis in dignissimos dolor dolorem non doloremque repellat, ad officia. Non obcaecati eum exercitationem atque aspernatur illum, qui dolorum et sunt laborum iure saepe facere ullam. Non, deleniti!</p>
+                <p>Contamos con profesionales <strong>experimentados</strong> ofreciendo una excelente <strong>calidad</strong> de servicio a nuestros clientes.</p>
+                <p>Nuestros principales valores son:</p>
+                <p className="bg-primary bg-opacity-10% padding-md border-left border-3 border-primary">Profesionalidad. Destacamos por ser responsables y organizados. Empleamos un riguroso método de trabajo con el cual abarcamos cada punto</p>
+                <p className="bg-primary bg-opacity-10% padding-md border-left border-3 border-primary">Claridad. Somos totalmente transparentes ante el cliente, creemos que es la mejor vía para alcanzar la confianza. Tenemos un trato totalmente personalizado adaptado a las necesidades de cada uno.</p>
+                <p className="bg-primary bg-opacity-10% padding-md border-left border-3 border-primary">Eficiencia. Conocemos tan bien a nuestros clientes que nos podemos adelantar a los posibles futuros problemas que les pueden surgir. De ahí que rápidamente demos solución a ellos.</p>
               </div>
             </div>
           </div>

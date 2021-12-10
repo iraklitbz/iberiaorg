@@ -5,13 +5,16 @@ import Script from 'next/script'
 
 
 function MyApp({ Component, pageProps }) {
+  
   useEffect(() => {
-    document.getElementsByTagName("html")[0].className += "js"
+    const UtilScript = document.createElement('script');
+    UtilScript.setAttribute('src','https://unpkg.com/codyhouse-framework/main/assets/js/util.js');
+    document.getElementsByTagName("html")[0].className += "js";
+    document.head.appendChild(UtilScript);
   },[])
   return (
       <Fragment>
          <Component {...pageProps} />
-         <Script src="https://unpkg.com/codyhouse-framework/main/assets/js/util.js"></Script>
       </Fragment>
   )
 }
