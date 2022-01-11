@@ -30,7 +30,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <Image src="/img/product-card-v2-img-1a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
+                    <Image src="/img/sedki-alimam-7aBz-b2UYEY-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
@@ -46,7 +46,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <Image src="/img/product-card-v2-img-2a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
+                    <Image src="/img/herr-bohn-fRTKxVdES34-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
@@ -62,7 +62,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <Image src="/img/product-card-v2-img-4a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
+                    <Image src="/img/maurits-bausenhart-7YVBPSt31BY-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 
@@ -78,7 +78,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <Image src="/img/product-card-v2-img-5a.jpg" layout='fill' loading="lazy" alt="Product preview image" />
+                    <Image src="/img/toa-heftiba-nTA5aTtnoa8-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 

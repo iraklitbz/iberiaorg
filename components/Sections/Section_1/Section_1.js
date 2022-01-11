@@ -13,7 +13,7 @@ const Section_1 = () => {
 
           <div className="text-component line-height-lg v-space-md">
             <figure className="text-component__block text-component__block--outset text-component__block--right reveal-fx reveal-fx--clip-x reveal-fx--is-visible">
-              <Image className="shadow-xs" src="/img/article-v4-img-1.jpg" width="462" height="308" alt="Image description here" />
+              <Image className="shadow-xs" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" width="462" height="308" alt="Image description here" />
             </figure>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt minus vero deserunt illum

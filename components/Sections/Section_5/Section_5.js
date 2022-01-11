@@ -26,7 +26,7 @@ const Section_5 = () => {
               <ul className="slideshow__content">
                 <li className="slideshow__item bg js-slideshow__item slideshow__item--selected">
                   <figure>
-                    <Image className="block width-100%" width="625px" height="625px" src="/img/prod-color-feature-img-1.jpg" alt="Image description" />
+                    <Image className="block width-100%" width="625px" height="625px" src="/img/jorg-grote-ZAyD9jbIP0E-unsplash.jpg" alt="Image description" />
                   </figure>
                 </li>
 

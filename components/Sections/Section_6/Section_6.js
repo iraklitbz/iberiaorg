@@ -13,7 +13,7 @@ const Section_6 = () => {
           
                 <div className="">
                   <figure className="feature-v12__bg-item reveal-fx reveal-fx--clip-x reveal-fx--is-visible">
-                    <Image className="block width-100%" width="1440" height="962" src="/img/feature-v12-img-3.jpg" alt="Image description" />
+                    <Image className="block width-100%" width="1440" height="962" src="/img/linh-vo-v4jDTtqm49o-unsplash.jpg" alt="Image description" />
                   </figure>
                 </div>
               </div>

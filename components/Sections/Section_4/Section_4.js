@@ -14,7 +14,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/feature-v10-img-1.jpg" loading="lazy" alt="Image description" />
+                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sara-sadeghloo-nQtar6m82YA-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md">
@@ -40,7 +40,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/feature-v10-img-2.jpg" loading="lazy" alt="Image description" />
+                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/nusa-urbancek-EgRFzUJ3WhU-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md order-1@md">
@@ -63,7 +63,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/feature-v10-img-1.jpg" loading="lazy" alt="Image description" />
+                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md">
@@ -81,7 +81,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/feature-v10-img-2.jpg" loading="lazy" alt="Image description" />
+                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sedki-alimam-7aBz-b2UYEY-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md order-1@md">
