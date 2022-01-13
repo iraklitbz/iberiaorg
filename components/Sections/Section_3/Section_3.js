@@ -2,12 +2,7 @@ import Link from "next/link";
 const Section_3 = () => {
   return ( 
     <section className="position-relative z-index-1 margin-bottom-xxl">
-        <div className="container max-width-xs margin-bottom-xl">
-          <div className="text-component text-center">
-            <h1 className="text-xxxl">Browse Categories</h1>
-            <p className="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid itaque, cupiditate dicta quo vero praesentium ipsam.</p>
-          </div>
-        </div>
+     
 
         <div className="container max-width-adaptive-md">
           <div className="grid gap-sm">

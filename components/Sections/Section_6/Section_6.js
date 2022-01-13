@@ -7,13 +7,13 @@ const Section_6 = () => {
               <div className="grid justify-center">
                 <div className="col-10 col-8@md">
                   <div className="feature-v12__offset-item text-center padding-bottom-md padding-bottom-0@md">
-                    <h1 className="text-xxxl@sm text-xxxxl@lg reveal-fx reveal-fx--translate-up reveal-fx--is-visible">Sobre nosotros</h1>
+                    <h1 className="reveal-fx reveal-fx--translate-up reveal-fx--is-visible padding-bottom-sm">Sobre nosotros</h1>
                   </div>
                 </div>
           
                 <div className="">
                   <figure className="feature-v12__bg-item reveal-fx reveal-fx--clip-x reveal-fx--is-visible">
-                    <Image className="block width-100%" width="1440" height="962" src="/img/linh-vo-v4jDTtqm49o-unsplash.jpg" alt="Image description" />
+                    <Image className="block width-100%" width="1440" height="962" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" alt="Image description" />
                   </figure>
                 </div>
               </div>

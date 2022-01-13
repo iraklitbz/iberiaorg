@@ -62,7 +62,7 @@ const ContactoForm = () => {
         <div className="container max-width-xs margin-bottom-lg">
           <div className="text-component text-center">
             <h1>Contacta con nosotros</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eos impedit nesciunt voluptates magni vero itaque.</p>
+            <p>Si tienes alguna consulta, ¡no dudes en preguntarnos!</p>
           </div>
         </div>
 
@@ -136,14 +136,14 @@ const ContactoForm = () => {
             <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
               <h6 className="font-bold margin-bottom-xxs">Email</h6>
               <dd>
-                <a href="mailto:webmaster@example.com">hello@myemail.com</a>
+                <a href="mailto:info@administracionesvesta.com">info@administracionesvesta.com</a>
               </dd>
             </div>
           
             <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
               <h6 className="font-bold margin-bottom-xxs">Teléfono</h6>
               <p className="line-height-md">
-                <p><a href="tel:+44 7656 6455">+000 000 455</a></p>
+                <p><a href="tel:+34747496359">+747 496 359</a></p>
               </p>
             </div>
           </div>

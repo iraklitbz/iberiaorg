@@ -4,28 +4,14 @@ const Section_1 = () => {
     <div className="position-relative z-index-1 padding-y-xxl margin-bottom-xxxl" data-theme="light-1">
       <div className="container max-width-adaptive-md position-relative z-index-2">
         <article className="t-article-v4 padding-md padding-x-lg@md padding-y-xl@md shadow-xs" data-theme="default">
+        <div className="t-article-v4__divider margin-y-lg" aria-hidden="true"><span></span></div>
           <div className="text-component text-center line-height-lg v-space-xxl max-width-xs margin-x-auto">
-            <p className="text-xs text-uppercase letter-spacing-lg color-contrast-medium">Our Story</p>
             <h1 className="text-xl">El reemplazo de administrador es un trámite fácil que gestionaremos sin gasto, no tengas miedo al cambio.</h1>
           </div>
 
           <div className="t-article-v4__divider margin-y-lg" aria-hidden="true"><span></span></div>
 
-          <div className="text-component line-height-lg v-space-md">
-            <figure className="text-component__block text-component__block--outset text-component__block--right reveal-fx reveal-fx--clip-x reveal-fx--is-visible">
-              <Image className="shadow-xs" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" width="462" height="308" alt="Image description here" />
-            </figure>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt minus vero deserunt illum
-              perspiciatis sed sit. Officia, quia at? Nisi dolores quis culpa nulla eveniet? Rem vel numquam ipsa
-              voluptatum voluptate illo minima, temporibus atque <a href="#0">officia soluta</a> magnam laborum neque
-              alias consequuntur enim aliquid consequatur non accusamus exercitationem. Perspiciatis dolorem a commodi
-              alias, ad corporis iusto magnam in quae deleniti incidunt facilis voluptatibus. Aliquid reprehenderit,
-              provident, totam necessitatibus cumque vel veniam consequuntur maxime iure accusamus explicabo recusandae
-              neque quas?</p>
-
-
-          </div>
+         
 
          
         </article>

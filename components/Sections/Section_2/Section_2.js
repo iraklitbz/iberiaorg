@@ -7,16 +7,16 @@ const Section_2 = () => {
             <div className="grid gap-sm">
               <div className="col-6@lg offset-3@lg">
                 <div className="text-component line-height-lg">
-                  <h1 className="text-xl">¿Por qué trabajar con nosotros?</h1>
+                  <h1 className="text-xl text-bold">¿Por qué nosotros?</h1>
+
+                  <ul>
+                    <li>Llevamos una total transparencia de las gestiones.</li>
+                    <li>Ponemos al día las cuentas de su comunidad.</li>
+                    <li>Precio competitivo en el mercado.</li>
+                    <li>Sin permanencia.</li>
+                  </ul>
       
-                  <p>Llevamos una total transparencia de las gestiones
-                    <br />
-                    Ponemos al día las cuentas de su comunidad
-                    <br />
-                    Precio competitivo en el mercado
-                    <br />
-                    Sin permanencia
-                  </p>
+               
                  
       
               

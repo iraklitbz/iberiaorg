@@ -12,23 +12,9 @@ Usage: codyhouse.co/license
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('/img/linh-vo-v4jDTtqm49o-unsplash.jpg');
+  background-image: url('/img/hero.jpg');
 }
 
-.intro--top-overlay {
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(alpha(var(--color-black), 0.85), alpha(var(--color-black), 0));
-    mix-blend-mode: multiply;
-  }
-}
 
 :root {
   --diagonal-section-offset: 50px;

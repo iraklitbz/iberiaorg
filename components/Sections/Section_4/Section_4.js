@@ -21,13 +21,13 @@ const Section_4 = () => {
                 <div className="text-component v-space-md height-100% flex flex-column padding-md">
                   <h2>Administración de Fincas</h2>
                   <ul className="list list--ul text-sm">
-                    <li>Constitución y redacción de estatutos</li>
-                    <li>Administración y gestión integral de la Comunidad</li>
-                    <li>Ponemos al día sus cuentas</li>
-                    <li>Contabilidad, cobros y pagos de la Comunidad</li>
-                    <li>Convocatoria y asistencia a juntas. Redacción y envío de actas</li>
-                    <li>Control del mantenimiento de las partes comunes del edificio</li>
-                    <li>Reclamación judicial de impagados</li>
+                    <li>Constitución y redacción de estatutos.</li>
+                    <li>Administración y gestión integral de la comunidad.</li>
+                    <li>Ponemos al día sus cuentas.</li>
+                    <li>Contabilidad, cobros y pagos de la comunidad.</li>
+                    <li>Convocatoria y asistencia a juntas. Redacción y envío de actas.</li>
+                    <li>Control del mantenimiento de las partes comunes del edificio.</li>
+                    <li>Reclamación judicial de impagados.</li>
                   </ul>
                  
                 </div>
@@ -47,10 +47,10 @@ const Section_4 = () => {
                 <div className="text-component v-space-md height-100% flex flex-column padding-md">
                   <h2>Gestión de alquileres</h2>
                   <ul className="list list--ul text-sm">
-                    <li>Asesoramiento y alquiler de viviendas y locales</li>
-                    <li>Administración y cobro de alquileres</li>
-                    <li>Redacción contratos de arrendamiento</li>
-                    <li>Actualización de rentas</li>
+                    <li>Asesoramiento y alquiler de viviendas y locales.</li>
+                    <li>Administración y cobro de alquileres.</li>
+                    <li>Redacción contratos de arrendamiento.</li>
+                    <li>Actualización de rentas.</li>
                    
                   </ul>
                   
@@ -88,12 +88,12 @@ const Section_4 = () => {
                 <div className="text-component v-space-md height-100% flex flex-column padding-md">
                   <h2>Trámites administrativos</h2>
                   <ul className="list list--ul text-sm">
-                    <li>Alta y cambios de titularidad en el Impuesto Bienes Inmuebles</li>
-                    <li>Obtención y renovación de cédulas de habitabilidad viviendas y locales</li>
-                    <li>Tramitación de escrituras compraventa, obra nueva, constitución y cancelación de hipotecas</li>
-                    <li>Agencia Inmobiliaria</li>
-                    <li>Mediación y asesoramiento en compraventa de inmuebles</li>
-                    <li>Valoraciones y peritaciones de inmuebles</li>
+                    <li>Alta y cambios de titularidad en el Impuesto Bienes Inmuebles.</li>
+                    <li>Obtención y renovación de cédulas de habitabilidad viviendas y locales.</li>
+                    <li>Tramitación de escrituras compraventa, obra nueva, constitución y cancelación de hipotecas.</li>
+                    <li>Agencia Inmobiliaria.</li>
+                    <li>Mediación y asesoramiento en compraventa de inmuebles.</li>
+                    <li>Valoraciones y peritaciones de inmuebles.</li>
                    
                   </ul>
                   

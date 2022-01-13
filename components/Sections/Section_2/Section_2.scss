@@ -17,6 +17,17 @@
   }
 }
 
+@include breakpoint(xs, "not all") {
+  .gallery-v2__item {
+    background-color: #f6f6f6;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eee
+  }
+}
+
+
+
 .prod-card-v2 {
   --rating-icon-size: 1.475em;
   position: relative;
