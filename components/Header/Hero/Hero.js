@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap items-center gap-sm reveal-fx reveal-fx--translate-up reveal-fx--is-visible" data-reveal-fx-delay="200" data-reveal-fx-delta="0">
-          <a href="shop.html" className="btn btn--primary">Solicitar presupuesto</a>
+          <a href="/Contacto" className="btn btn--primary">Solicitar presupuesto</a>
         </div>
       </div>
     </div>
