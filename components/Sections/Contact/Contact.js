@@ -140,9 +140,9 @@ const ContactoForm = () => {
                 </div>
 
                 <div className="flex ">
-                  <div class="custom-checkbox margin-right-xxs">
-                    <input onChange={() => handleCheckClick()}  class="custom-checkbox__input" type="checkbox" aria-label="Checkbox label" />
-                    <div class="custom-checkbox__control" aria-hidden="true"></div>
+                  <div className="custom-checkbox margin-right-xxs">
+                    <input onChange={() => handleCheckClick()}  className="custom-checkbox__input" type="checkbox" aria-label="Checkbox label" />
+                    <div className="custom-checkbox__control" aria-hidden="true"></div>
                   </div>
                     <p>He leído y acepto la <Link href="/politica-de-privacidad">política de privacidad.</Link></p>
                 </div>
