@@ -238,7 +238,7 @@ const Aviso = () => {
         </tr>
         <tr className="tbl__row">
           <td className="tbl__cell"><strong>Edge</strong></td>
-          <td className="tbl__cell"><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09</a></td>
+          <td className="tbl__cell"><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noreferrer noopener">https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09</a></td>
         </tr>
         <tr className="tbl__row">
           <td className="tbl__cell"><strong>Explorer</strong></td>

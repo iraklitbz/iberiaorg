@@ -38,7 +38,7 @@ const Privacidad = () => {
                 <li>Duración de la visita o navegación por la Página web.</li>
               </ul>
             
-              <p>Tal información se almacena mediante Google Analytics, por lo que nos remitimos a la Política de Privacidad de Google, ya que éste recaba y trata tal información. http://www.google.com/intl/en/policies/privacy/información. Del mismo modo, en la Página Web se facilita la utilidad de Google Maps, la cual puede tener acceso a tu ubicación, en el supuesto de que se lo permitas, con el fin de facilitarte una mayor especificidad sobre la distancia y/o caminos nuestras sedes. A este respecto, nos remitimos a la Política de Privacidad utilizada por Google Maps, con el fin de conocer el uso y tratamiento de tales datos <a target="_blank" href="http://www.google.com/intl/en/policies/privacy/">http://www.google.com/intl/en/policies/privacy/</a></p>
+              <p>Tal información se almacena mediante Google Analytics, por lo que nos remitimos a la Política de Privacidad de Google, ya que éste recaba y trata tal información. http://www.google.com/intl/en/policies/privacy/información. Del mismo modo, en la Página Web se facilita la utilidad de Google Maps, la cual puede tener acceso a tu ubicación, en el supuesto de que se lo permitas, con el fin de facilitarte una mayor especificidad sobre la distancia y/o caminos nuestras sedes. A este respecto, nos remitimos a la Política de Privacidad utilizada por Google Maps, con el fin de conocer el uso y tratamiento de tales datos <a target="_blank" rel="noreferrer noopener" href="http://www.google.com/intl/en/policies/privacy/">http://www.google.com/intl/en/policies/privacy/</a></p>
               <p>La información que nosotros manejamos, no estará relacionada con un usuario concreto y se almacenará en nuestras bases de datos, con la finalidad de realizar análisis estadísticos, mejoras en la Página Web, sobre nuestros productos y/o servicios y nos ayudará a mejorar nuestra estrategia comercial. Los datos no serán comunicados a terceros.</p>
              <h2>Registro del usuario en la página web/ Envío de formularios</h2>
              <p>Para acceder a determinados productos y/o servicios, como la reserva, es preciso que el usuario cumplimente un formulario. Para ello, en el formulario de registro, se solicitan una serie de datos personales. Los datos son necesarios y obligatorios para llevar a cabo tal registro. En el caso de no facilitar tales campos, no se llevará a cabo el registro. En este caso, los datos de navegación, se asociarán a los de registro del usuario, identificando al mismo usuario concreto que navega por la Página Web. De esta forma, se podrá personalizar la oferta de productos y/o servicios que, a nuestro criterio, más se ajuste al usuario.</p>
@@ -102,10 +102,10 @@ const Privacidad = () => {
               <h4>¿Cuál es la legitimación para el tratamiento de tus datos?</h4>
               <p>La aceptación de una relación contractual en el entorno de la red social que corresponda, y conforme a sus políticas de Privacidad:</p>
               <ul className="list list--ul">
-                <li>Facebook <a target="_blank" href="https://www.facebook.com/policy.php?ref=pf">https://www.facebook.com/policy.php?ref=pf</a></li>
-                <li>Instagram <a target="_blank" href="https://help.instagram.com/155833707900388">https://help.instagram.com/155833707900388</a></li>
-                <li>Twitter  <a target="_blank" href="https://twitter.com/privacy">https://twitter.com/privacy</a></li>
-                <li>Whatsapp: <a target="_blank" href="https://www.whatsapp.com/legal/#privacy-policy">https://www.whatsapp.com/legal/#privacy-policy</a></li>
+                <li>Facebook <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/policy.php?ref=pf">https://www.facebook.com/policy.php?ref=pf</a></li>
+                <li>Instagram <a target="_blank" rel="noreferrer noopener" href="https://help.instagram.com/155833707900388">https://help.instagram.com/155833707900388</a></li>
+                <li>Twitter  <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/privacy">https://twitter.com/privacy</a></li>
+                <li>Whatsapp: <a target="_blank" rel="noreferrer noopener" href="https://www.whatsapp.com/legal/#privacy-policy">https://www.whatsapp.com/legal/#privacy-policy</a></li>
               </ul>
               <h4>¿Durante cuánto tiempo vamos a mantener los datos personales?</h4>
               <p>Sólo podemos consultar o dar de baja tus datos de forma restringida al tener un perfil específico. Los trataremos tanto tiempo como tú nos dejes siguiéndonos, siendo amigos o dándole a “me gusta”, “seguir” o botones similares.</p>
