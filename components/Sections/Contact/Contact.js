@@ -154,7 +154,7 @@ const ContactoForm = () => {
                 <div className="text-center margin-top-lg">
                   { !loader 
                     ?
-                    <button className="btn btn--primary" className={!checked ? "btn btn--primary btn--disabled" : 'btn btn--primary'}>Enviar</button>
+                    <button className={!checked ? "btn btn--primary btn--disabled" : 'btn btn--primary'}>Enviar</button>
                     :  
                     <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                    }
