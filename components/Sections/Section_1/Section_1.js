@@ -1,5 +1,6 @@
-import Image from "next/image";
+
 const Section_1 = () => {
+
   return ( 
     <div className="position-relative z-index-1 padding-y-xxl margin-bottom-xxxl" data-theme="light-1">
       <div className="container max-width-adaptive-md position-relative z-index-2">
@@ -10,10 +11,6 @@ const Section_1 = () => {
           </div>
 
           <div className="t-article-v4__divider margin-y-lg" aria-hidden="true"><span></span></div>
-
-         
-
-         
         </article>
       </div>
 

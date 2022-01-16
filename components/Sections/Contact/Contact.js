@@ -1,14 +1,29 @@
 import { useState } from "react";
 import Swal from 'sweetalert2';
+import Link from "next/link";
 
 const ContactoForm = () => {
     const [loader, setLoader] = useState(false);
+    const [msgError, setMsgError] = useState(false);
+    const [checked, setChecked] = useState(false);
     const [ mensaje, setMensaje ] = useState({
       name: '',
       email: '',
       texto: ''
     })
     const {name, email, texto } = mensaje;
+
+    const handleCheckClick = () => {
+      if(checked) {
+        setChecked(false);
+       
+      } else {
+        setChecked(true);
+        setMsgError(false);
+       
+      }
+      console.log(checked)
+    }
     const onChange = (e) => {
       setMensaje({
         ...mensaje,
@@ -16,45 +31,53 @@ const ContactoForm = () => {
     })
     }
     const onSubmit = (e) => {
-      e.preventDefault();
-      setLoader(true);
-      /*VALIDAR FORMULARIO*/
-        // Validar que no haya campos vacios
-      if( name.trim() === '' || 
-      email.trim() === '' || 
-      email.trim() === '' || 
-      texto.trim() === '' ) {
-          console.log('Error')
-          return;
-      }
-    
-     
-      /*ENVIAR FORMULARIO*/
-      fetch('/api/sendmail', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(mensaje)
-      }).then(async (res) => {
-        if (res.status === 200) {
-          await setTimeout(() =>{
-            console.log(res);
-            setLoader(false)
-            setMensaje({
-              name: '',
-              email: '',
-              texto: ''
-            })
-            Swal.fire(
-              'Gracias', 
-              'El mensaje se ha enviado correctamente y nos pondremos en contacto contigo en breve',
-              'success'
-            );
-          },2000)
+      if(checked){
+        setMsgError(false);
+        e.preventDefault();
+        setLoader(true);
+        /*VALIDAR FORMULARIO*/
+          // Validar que no haya campos vacios
+        if( name.trim() === '' || 
+        email.trim() === '' || 
+        email.trim() === '' || 
+        texto.trim() === '' ) {
+            console.log('Error')
+            return;
         }
-      })
+      
+       
+        /*ENVIAR FORMULARIO*/
+        fetch('/api/sendmail', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(mensaje)
+        }).then(async (res) => {
+          if (res.status === 200) {
+            await setTimeout(() =>{
+              console.log(res);
+              setLoader(false)
+              setMensaje({
+                name: '',
+                email: '',
+                texto: ''
+              })
+              Swal.fire(
+                'Gracias', 
+                'El mensaje se ha enviado correctamente y nos pondremos en contacto contigo en breve',
+                'success'
+              );
+            },2000)
+          }
+        })
+      }
+      else {
+        e.preventDefault();
+        setMsgError(true)
+      }
+     
       
     }
   return ( 
@@ -115,11 +138,23 @@ const ContactoForm = () => {
 
                     </textarea>
                 </div>
+
+                <div className="flex ">
+                  <div class="custom-checkbox margin-right-xxs">
+                    <input onChange={() => handleCheckClick()}  class="custom-checkbox__input" type="checkbox" aria-label="Checkbox label" />
+                    <div class="custom-checkbox__control" aria-hidden="true"></div>
+                  </div>
+                    <p>He leído y acepto la <Link href="/politica-de-privacidad">política de privacidad.</Link></p>
+                </div>
+                { msgError ? <p className="error text--xs">Este campo es obligatorio</p> : null}
+             
+                
+                 
               
-                <div className="text-center">
+                <div className="text-center margin-top-lg">
                   { !loader 
                     ?
-                    <button className="btn btn--primary">Enviar</button>
+                    <button className="btn btn--primary" className={!checked ? "btn btn--primary btn--disabled" : 'btn btn--primary'}>Enviar</button>
                     :  
                     <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                    }

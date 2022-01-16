@@ -6,8 +6,8 @@ const Hero = () => {
       
 
         <div className="text-component margin-bottom-sm reveal-fx reveal-fx--translate-up reveal-fx--is-visible" data-reveal-fx-delay="100" data-reveal-fx-delta="0">
-          <h1 className="text-xxl text-bold">Administración de Fincas e Inmuebles en Palma de Mallorca.</h1>
-          <p>Tu comunidad en las mejores manos.</p>
+          <h1 className="text-xxl text-bold">Administración de Fincas e Inmuebles en Palma de Mallorca</h1>
+          <p>Tu comunidad en las mejores manos</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-sm reveal-fx reveal-fx--translate-up reveal-fx--is-visible" data-reveal-fx-delay="200" data-reveal-fx-delta="0">

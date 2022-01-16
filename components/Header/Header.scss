@@ -10,6 +10,7 @@
   height: var(--header-height);
   width: 100%;
   background-color: var(--color-bg);
+  top: 0;
   z-index: var(--z-index-header, 3); 
 }
 

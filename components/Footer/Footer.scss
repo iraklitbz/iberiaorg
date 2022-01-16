@@ -52,3 +52,38 @@
     color: var(--color-contrast-high);
   }
 }
+
+.cookies-container {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  bottom: 0!important;
+  background-color: #fff!important;
+  z-index: 9999;
+  border-top: 1px solid #ddd;;
+  @include breakpoint(md) {
+    border-top: none;
+    right: var(--space-sm);
+    bottom: var(--space-sm)!important;
+  }
+  > div:first-child {
+    margin-bottom: var(--space-sm);
+    text-align: center;
+  }
+  > div:last-child {
+   display: flex;
+  }
+  .btn {
+    width: 100%;
+    &.btn--primary {
+      order: 1;
+    }
+    &.btn--secundary {
+      order: 2;
+    }
+  }
+  a {
+    display: block;
+    margin-top: var(--space-xxxs);
+  }
+}

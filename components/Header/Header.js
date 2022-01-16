@@ -5,10 +5,10 @@ import headerMenu from "../../util/components/menuTrigger";
 
 const Header = () => {
   useEffect(() => {
-    headerMenu()
+    headerMenu();
   },[])
   return ( 
-      <header className="header position-relative js-header ">
+      <header className="header position-fixed js-header ">
         <Navbar />
       </header>
    );

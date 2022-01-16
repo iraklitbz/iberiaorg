@@ -10,7 +10,7 @@ const Section_2 = () => {
                   <h1 className="text-xl text-bold">¿Por qué nosotros?</h1>
 
                   <ul>
-                    <li>Llevamos una total transparencia de las gestiones.</li>
+                    <li>Llevamos total transparencia de las gestiones.</li>
                     <li>Ponemos al día las cuentas de su comunidad.</li>
                     <li>Precio competitivo en el mercado.</li>
                     <li>Sin permanencia.</li>
@@ -30,7 +30,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <Image src="/img/sedki-alimam-7aBz-b2UYEY-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
+                    <Image src="/img/toa-heftiba-nTA5aTtnoa8-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
                 </a>
 

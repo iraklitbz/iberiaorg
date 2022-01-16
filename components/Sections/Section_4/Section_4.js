@@ -51,6 +51,7 @@ const Section_4 = () => {
                     <li>Administración y cobro de alquileres.</li>
                     <li>Redacción contratos de arrendamiento.</li>
                     <li>Actualización de rentas.</li>
+                    <li>Seguro de impago de alquiler.</li>
                    
                   </ul>
                   
@@ -63,12 +64,19 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" loading="lazy" alt="Image description" />
+                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/save.jpeg" loading="lazy" alt="Image description" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md">
                 <div className="text-component v-space-md height-100% flex flex-column padding-md">
                   <h2>Gestión externa de seguros</h2>
+                  <ul className="list list--ul text-sm">
+                    <li>Seguros personales: vida, accidentes personales, salud o enfermedad, dependencia.</li>
+                    <li>Seguros de daños o patrimoniales: hogar, comunidades, automóvil, ingeniería, multirriesgo, crédito, robo, transportes, incendios, responsabilidad civil, objetos.</li>
+                    <li>Seguros de prestación de servicios: asistencia en viaje, decesos, defensa jurídica.</li>
+      
+                   
+                  </ul>
                   
                  
                 </div>
@@ -81,7 +89,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sedki-alimam-7aBz-b2UYEY-unsplash.jpg" loading="lazy" alt="Image description" />
+                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/windows-SwHvzwEzCfA-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md order-1@md">
