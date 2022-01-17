@@ -1,3 +1,4 @@
+import Link from "next/link";
 const Hero = () => {
   return ( 
     <section className="intro intro--top-overlay position-relative z-index-1 diagonal-section-bottom diagonal-section-bottom--flip-x bg-transparent margin-bottom-xxl">
@@ -11,7 +12,8 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap items-center gap-sm reveal-fx reveal-fx--translate-up reveal-fx--is-visible" data-reveal-fx-delay="200" data-reveal-fx-delta="0">
-          <a href="/Contacto" className="btn btn--primary">Solicitar presupuesto</a>
+          <Link href="/Contacto" className="btn btn--primary">Solicitar presupuesto</Link>
+          
         </div>
       </div>
     </div>
