@@ -6,10 +6,40 @@
   }
 }
 
+.header__logo .header__logo__box {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: var(--space-xs);
+  > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+  }
+  p {
+    margin-left: var(--space-xs);
+    color:  #fff;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: var(--space-xxs);
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  img {
+    width: 50px;
+  }
+}
+
 .header {
   height: var(--header-height);
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: var(--color-primary);
   top: 0;
   z-index: var(--z-index-header, 3); 
 }
@@ -23,6 +53,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 // logo
@@ -44,7 +75,7 @@
   left: 0;
   width: 100%;
   max-height: 100vh;
-  background-color: var(--color-bg);
+  background-color: var(--color-primary);
   box-shadow: var(--shadow-md);
   overflow: auto;
   overscroll-behavior: contain;
@@ -59,7 +90,7 @@
     top: 0;
     height: var(--header-height);
     background: inherit;
-    border-bottom: 1px solid var(--color-contrast-lower);
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -73,7 +104,7 @@
 
 .header__label { // menu label
   font-size: var(--text-sm);
-  color: var(--color-contrast-medium);
+  color: #fff;
   margin-bottom: var(--space-sm);
 }
 
@@ -85,21 +116,26 @@
   font-size: var(--text-lg);
   color: var(--color-contrast-higher);
   text-decoration: none;
+  opacity: 0.88;
 
   &:hover, &.active { // style of :hover + selected link
-    color: var(--color-primary);
+    color: #fff;
+    opacity: 1;
   }
 }
 
 .header__nav-btn {
   font-size: var(--text-lg);
   width: 100%;
+  color: var(--color-primary);
+  background-color: #fff;
+  font-weight: bold;
 }
 
 .header__item--divider { // element used to separate nav items
   height: 1px;
   width: 100%;
-  background-color: var(--color-contrast-lower);
+  background-color: #fff;
 }
 
 // menu trigger

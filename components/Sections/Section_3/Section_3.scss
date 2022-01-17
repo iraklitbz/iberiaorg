@@ -90,7 +90,10 @@
 }
 
 .banner__figure1 {
-  background-image: url('/img/linh-vo-v4jDTtqm49o-unsplash.jpg')
+  background-image: url('/logo_vesta.png');
+  background-size: 140px;
+  background-position: center center;
+  background-color: var(--color-primary);
 }
 .banner__figure2 {
   background-image: url('/img/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg')

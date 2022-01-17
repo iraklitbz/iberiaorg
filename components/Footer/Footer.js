@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div className="main-footer__colophon border-top padding-top-xs">
               <div className="text-sm text-xs@md color-contrast-medium flex gap-xs">
-                <span>© myWebsite</span>
+                <span>©<strong>VESTA</strong> ADMINISTRACIONES</span>
                 <Link href="/politica-de-privacidad" className="color-contrast-high">Política de privacidad</Link>
                 <Link href="/politica-cookies" className="color-contrast-high">Política cookies</Link>
               

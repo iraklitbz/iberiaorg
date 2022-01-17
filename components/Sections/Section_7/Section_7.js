@@ -7,7 +7,7 @@ const Section_7 = () => {
             <div className="col-8@md">
               <div className="color-primary margin-bottom-sm"> Acerca de Administraciones Vesta</div>
     
-              <h2 className="text-xl">Administraciones Vesta es una empresa en administración de fincas y gestión de la propiedad.</h2>
+              <h2 className="text-xl">Administraciones Vesta es una empresa dedicada a la administración de fincas y gestión de la propiedad.</h2>
             </div>
     
             <div className="col-12 offset-2@lg col-8@lg padding-y-lg">
