@@ -40,11 +40,7 @@ const Navbar = () => {
                   <a className={`header__link ${router.pathname == "/Empresa" ? "active" : ""}`}>Sobre nosotros</a>
                 </Link>
               </li>
-              <li className="header__item">
-                <Link href="/Inmobiliaria">
-                  <a className={`header__link ${router.pathname == "/Inmobiliaria" ? "active" : ""}`}>Inmobiliaria</a>
-                </Link>
-              </li>
+             
              
               <li className="header__item header__item--divider" aria-hidden="true"></li>
               <li className="header__item">
