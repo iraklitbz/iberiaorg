@@ -11,7 +11,7 @@ const Navbar = () => {
               <span>
                  <img src="/logo_vesta.png" layout='fill' alt="logo" />
               </span>
-            <p>VESTA </p>
+          
             </a>
 
           </Link>

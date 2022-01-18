@@ -43,3 +43,16 @@
     }
   }
 }
+
+.grid-service {
+  figure.reveal-fx > div {
+    height: 100%;
+    > div {
+      height: 100%;
+    }
+  }
+}
+
+.mg-f {
+  margin-bottom: -1px;
+}

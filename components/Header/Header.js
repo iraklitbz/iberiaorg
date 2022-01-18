@@ -8,7 +8,7 @@ const Header = () => {
     headerMenu();
   },[])
   return ( 
-      <header className="header position-fixed js-header " data-theme="dark-1">
+      <header className="header position-fixed js-header ">
         <Navbar />
       </header>
    );

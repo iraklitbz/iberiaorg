@@ -10,9 +10,9 @@ const Section_4 = () => {
           </div>
         </div>
 
-        <div className="padding-y-xl padding-top-xl@md padding-bottom-0@md">
+        <div className="padding-y-xl padding-top-xl@md padding-bottom-0@md mg-f">
           <div className="container max-width-adaptive-lg">
-            <div className="grid">
+            <div className="grid grid-service">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
                 <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sara-sadeghloo-nQtar6m82YA-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
@@ -36,9 +36,9 @@ const Section_4 = () => {
           </div>
         </div>
 
-        <div className="padding-y-xl padding-bottom-0@md padding-top-0@md" data-theme="dark-1">
+        <div className="padding-y-xl padding-bottom-0@md padding-top-0@md mg-f" data-theme="dark-1">
           <div className="container max-width-adaptive-lg">
-            <div className="grid">
+            <div className="grid grid-service">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
                 <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/nusa-urbancek-EgRFzUJ3WhU-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>
@@ -60,9 +60,9 @@ const Section_4 = () => {
             </div>
           </div>
         </div>
-        <div className="padding-y-xl padding-top-0@md padding-bottom-0@md">
+        <div className="padding-y-xl padding-top-0@md padding-bottom-0@md mg-f">
           <div className="container max-width-adaptive-lg">
-            <div className="grid">
+            <div className="grid grid-service">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
                 <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/save.jpeg" loading="lazy" alt="Image description" />
               </figure>
@@ -85,9 +85,9 @@ const Section_4 = () => {
           </div>
         </div>
 
-        <div className="padding-y-xl padding-bottom-xxl@md padding-top-0@md" data-theme="dark-1">
+        <div className="padding-y-xl padding-bottom-xxl@md padding-top-0@md mg-f" data-theme="dark-1">
           <div className="container max-width-adaptive-lg">
-            <div className="grid">
+            <div className="grid grid-service">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
                 <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/windows-SwHvzwEzCfA-unsplash.jpg" loading="lazy" alt="Image description" />
               </figure>

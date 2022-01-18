@@ -38,7 +38,7 @@
   }
 }
 
-.banner__figure {
+.banner__figure, .banner__text {
   height: 0;
   padding-bottom: 50%;
   transition: .3s var(--ease-out);
@@ -67,7 +67,7 @@
 }
 
 @include breakpoint(md) {  
-  .banner__figure {
+  .banner__figure, .banner__text {
     height: 100%;
     padding-bottom: 0;
     clip-path: polygon(100px 0%, 100% 0%, 100% 100%, 50px 100%);
@@ -75,7 +75,7 @@
 
   // invert variation
   .banner--invert {
-    .banner__figure {
+    .banner__figure, .banner__text {
       clip-path: polygon(0% 0%, calc(100% - 100px) 0%, calc(100% - 50px) 100%, 0% 100%);
     }
     
@@ -84,16 +84,30 @@
     }
   }
 
-  .banner:hover .banner__figure { // clip animation - visible on big screens
+  .banner:hover .banner__figure,.banner:hover .banner__text { // clip animation - visible on big screens
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
 .banner__figure1 {
-  background-image: url('/logo_vesta.png');
   background-size: 140px;
   background-position: center center;
   background-color: var(--color-primary);
+  position: relative;
+  > h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: rgba(255,255,255, 0.6);
+    text-transform: uppercase;
+    font-size: var(--text-lg);
+    span {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
 }
 .banner__figure2 {
   background-image: url('/img/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg')
