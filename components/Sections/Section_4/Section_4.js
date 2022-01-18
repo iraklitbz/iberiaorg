@@ -14,7 +14,7 @@ const Section_4 = () => {
           <div id="alquileres" className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sara-sadeghloo-nQtar6m82YA-unsplash.jpg" loading="lazy" alt="Image description" />
+                <Image layout="fixed" className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sara-sadeghloo-nQtar6m82YA-unsplash.jpg" loading="lazy" alt="Administración de Fincas imagen" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md">
@@ -40,7 +40,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/nusa-urbancek-EgRFzUJ3WhU-unsplash.jpg" loading="lazy" alt="Image description" />
+                <Image layout="fixed" className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/nusa-urbancek-EgRFzUJ3WhU-unsplash.jpg" loading="lazy" alt="Gestión de alquileres imagen" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md order-1@md">
@@ -64,7 +64,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/save.jpeg" loading="lazy" alt="Image description" />
+                <Image layout="fixed" className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/save.jpeg" loading="lazy" alt="Gestión externa de seguros imagen" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md">
@@ -90,7 +90,7 @@ const Section_4 = () => {
           <div className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
-                <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/windows-SwHvzwEzCfA-unsplash.jpg" loading="lazy" alt="Image description" />
+                <Image layout="fixed" className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/windows-SwHvzwEzCfA-unsplash.jpg" loading="lazy" alt="Trámites administrativos imagen" />
               </figure>
 
               <div className="bg-contrast-lower col-6@md order-1@md">

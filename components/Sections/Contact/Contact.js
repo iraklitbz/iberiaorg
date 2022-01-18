@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useRouter } from 'next/router'
 import Swal from 'sweetalert2';
 import Link from "next/link";
 
 const ContactoForm = () => {
+    const router = useRouter()
     const [loader, setLoader] = useState(false);
     const [msgError, setMsgError] = useState(false);
     const [checked, setChecked] = useState(false);
@@ -84,8 +86,18 @@ const ContactoForm = () => {
     <section className="contact-v3 position-relative z-index-1 margin-top-xxl margin-bottom-xxl">
         <div className="container max-width-xs margin-bottom-lg">
           <div className="text-component text-center">
-            <h1>Contacta con nosotros</h1>
-            <p>Si tienes alguna consulta, ¡no dudes en preguntarnos!</p>
+            {router.query.name === 'presupuesto'? 
+             <>
+              <h1>Solicita tu presupuesto</h1>
+              <p>Tu comunidad en las mejores manos</p>
+            </>
+             : 
+               <>
+                <h1>Contacta con nosotros</h1>
+                <p>Si tienes alguna consulta, ¡no dudes en preguntarnos!</p>
+              </>
+             }
+            
           </div>
         </div>
 
@@ -122,22 +134,44 @@ const ContactoForm = () => {
                     required 
                   />
                 </div>
-            
-                <div className="margin-bottom-sm">
-                  <label className="form-label margin-bottom-xxs" htmlFor="contactMessage">Mensaje</label>
-                  <textarea 
-                    className="form-control width-100%" 
-                    rows="9" 
-                    name="texto" 
-                    id="texto"
-                    placeholder="Mensaje"
-                    value={texto}
-                    onChange={onChange}
-                    required
-                    >
 
-                    </textarea>
-                </div>
+                {router.query.name === 'presupuesto' 
+                ? 
+              
+               <div className="margin-bottom-sm">
+               <label className="form-label margin-bottom-xxs" htmlFor="contactMessage">Solicita tu presupuesto</label>
+               <textarea 
+                 className="form-control width-100%" 
+                 rows="9" 
+                 name="texto" 
+                 id="texto"
+                 placeholder="Solicita tu presupuesto"
+                 value={texto}
+                 onChange={onChange}
+                 required
+                 >
+
+                 </textarea>
+             </div> 
+                :
+                <div className="margin-bottom-sm">
+                <label className="form-label margin-bottom-xxs" htmlFor="contactMessage">Mensaje</label>
+                <textarea 
+                  className="form-control width-100%" 
+                  rows="9" 
+                  name="texto" 
+                  id="texto"
+                  placeholder="Mensaje"
+                  value={texto}
+                  onChange={onChange}
+                  required
+                  >
+
+                  </textarea>
+              </div>
+                }
+            
+               
 
                 <div className="flex ">
                   <div className="custom-checkbox margin-right-xxs">
