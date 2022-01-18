@@ -10,8 +10,8 @@ const Section_4 = () => {
           </div>
         </div>
 
-        <div className="padding-y-xl padding-top-xl@md padding-bottom-0@md mg-f">
-          <div className="container max-width-adaptive-lg">
+        <div id="seguros" className="padding-y-xl padding-top-xl@md padding-bottom-0@md mg-f">
+          <div id="alquileres" className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
                 <Image className="block width-100% height-100% object-cover" width="640px" height="400px" src="/img/sara-sadeghloo-nQtar6m82YA-unsplash.jpg" loading="lazy" alt="Image description" />
@@ -36,7 +36,7 @@ const Section_4 = () => {
           </div>
         </div>
 
-        <div className="padding-y-xl padding-bottom-0@md padding-top-0@md mg-f" data-theme="dark-1">
+        <div id="seguros" className="padding-y-xl padding-bottom-0@md padding-top-0@md mg-f" data-theme="dark-1">
           <div className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
@@ -60,7 +60,7 @@ const Section_4 = () => {
             </div>
           </div>
         </div>
-        <div className="padding-y-xl padding-top-0@md padding-bottom-0@md mg-f">
+        <div id="tramites" className="padding-y-xl padding-top-0@md padding-bottom-0@md mg-f">
           <div className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">
@@ -80,12 +80,13 @@ const Section_4 = () => {
                   
                  
                 </div>
+              
               </div>
             </div>
           </div>
         </div>
 
-        <div className="padding-y-xl padding-bottom-xxl@md padding-top-0@md mg-f" data-theme="dark-1">
+        <div  className="padding-y-xl padding-bottom-xxl@md padding-top-0@md mg-f" data-theme="dark-1">
           <div className="container max-width-adaptive-lg">
             <div className="grid grid-service">
               <figure className="col-6@md order-2@md reveal-fx reveal-fx--clip-y reveal-fx--is-visible">

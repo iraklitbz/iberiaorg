@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const Section_2 = () => {
   return ( 
     <section className="gallery-v2 margin-bottom-xxl">
@@ -28,11 +29,11 @@ const Section_2 = () => {
           <ul className="gallery-v2__grid grid gap-sm">
             <li className="gallery-v2__item col-6@sm col-3@lg">
               <div className="prod-card-v2">
-                <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
+                <Link href="/Servicios#fincas" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
                     <Image src="/img/toa-heftiba-nTA5aTtnoa8-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
-                </a>
+                </Link>
 
                 <div className="padding-sm text-center">
                   <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Administración de Fincas</a></h2>
@@ -44,11 +45,11 @@ const Section_2 = () => {
       
             <li className="gallery-v2__item col-6@sm col-3@lg">
               <div className="prod-card-v2">
-                <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
+                <Link href="/Servicios#seguros" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
                     <Image src="/img/seguro.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
-                </a>
+                </Link>
 
                 <div className="padding-sm text-center">
                   <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Gestión externa de seguros</a></h2>
@@ -60,11 +61,11 @@ const Section_2 = () => {
       
             <li className="gallery-v2__item col-6@sm col-3@lg">
               <div className="prod-card-v2">
-                <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
+                <Link href="/Servicios#alquileres" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
                     <Image src="/img/maurits-bausenhart-7YVBPSt31BY-unsplash.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
-                </a>
+                </Link>
 
                 <div className="padding-sm text-center">
                   <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Gestión de alquileres</a></h2>
@@ -76,11 +77,11 @@ const Section_2 = () => {
       
             <li className="gallery-v2__item col-6@sm col-3@lg">
               <div className="prod-card-v2">
-                <a href="#0" className="prod-card-v2__img-link" aria-label="Description of the link">
+                <Link href="/Servicios#tramites" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
                     <Image src="/img/tramites.jpg" layout='fill' loading="lazy" alt="Product preview image" />
                   </figure>
-                </a>
+                </Link>
 
                 <div className="padding-sm text-center">
                   <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Trámites administrativos</a></h2>
