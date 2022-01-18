@@ -47,7 +47,7 @@ const Section_2 = () => {
               <div className="prod-card-v2">
                 <Link href="/Servicios#seguros" className="prod-card-v2__img-link" aria-label="Description of the link">
                   <figure className="media-wrapper media-wrapper--4:5">
-                    <Image layout="fixed" width='306' height='382' src="/img/seguros.jpeg" layout='fill' alt="Gestión externa de seguros imagen" />
+                    <Image layout="fixed" width='306' height='382' src="/img/seguros.jpeg" alt="Gestión externa de seguros imagen" />
                   </figure>
                 </Link>
 
