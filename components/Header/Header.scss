@@ -15,6 +15,12 @@
   border-radius: 50%;
   width: 66px;
   height: 66px;
+  position: relative;
+  top: 13px;
+  @include breakpoint(md) {
+    position: unset;
+    top: unset;
+  }
   img {
     width: 50px;
   }

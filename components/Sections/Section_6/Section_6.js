@@ -2,7 +2,7 @@ import Image from "next/image";
 const Section_6 = () => {
   return ( 
     <section className="padding-top-header position-relative z-index-1">
-          <div className="feature-v12 feature-v12--top feature-v12--offset-xs@md padding-top-xl">
+          <div className="feature-v12 feature-v12--top feature-v12--offset-xs@md padding-top-xxl padding-top-xl@md ">
             <div className="container max-width-adaptive-xl">
               <div className="grid justify-center">
                 <div className="col-10 col-8@md">
@@ -12,7 +12,7 @@ const Section_6 = () => {
                 </div>
                 <div className="">
                   <figure className="feature-v12__bg-item reveal-fx reveal-fx--clip-x reveal-fx--is-visible">
-                    <Image className="block width-100%" layout="fixed" width="1440" height="962" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" alt="Imagen decorativo sobre nosotros" />
+                    <Image className="block width-100%" width="1440" height="962" src="/img/tom-podmore-27wlT2XF9tY-unsplash.jpg" alt="Imagen decorativo sobre nosotros" />
                   </figure>
                 </div>
               </div>
