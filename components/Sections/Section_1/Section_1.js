@@ -2,9 +2,9 @@
 const Section_1 = () => {
 
   return ( 
-    <div className="position-relative z-index-1 padding-y-xxl margin-bottom-xxxl" data-theme="dark-1">
+    <div className="position-relative z-index-1 padding-y-sm margin-bottom-xxxl" data-theme="light-1">
       <div className="container max-width-adaptive-md position-relative z-index-2">
-        <article className="t-article-v4 padding-md padding-x-lg@md padding-y-xl@md shadow-xs" data-theme="dark-1">
+        <article className="t-article-v4 padding-md padding-x-lg@md padding-y-xl@md">
         <div className="t-article-v4__divider margin-y-lg" aria-hidden="true"><span></span></div>
           <div className="text-component text-center line-height-lg v-space-xxl max-width-xs margin-x-auto">
             <h1 className="text-xl">El reemplazo de administrador es un trámite fácil que gestionaremos sin gasto, no tengas miedo al cambio.</h1>
@@ -15,7 +15,7 @@ const Section_1 = () => {
       </div>
 
       <figure className="bg-decoration-v2 z-index-1 blend-overlay flip-x" aria-hidden="true">
-        <svg className="bg-decoration-v2__svg opacity-90%" viewBox="0 0 1920 450" fill="none">
+      <svg className="bg-decoration-v2__svg color-contrast-higher opacity-30%" viewBox="0 0 1920 450" fill="none">
           <g stroke="currentColor" strokeWidth="2">
             <path d="M1750 135C1750 153.565 1742.63 171.37 1729.5 184.497C1716.37 197.625 1698.57 205 1680 205C1661.43 205 1643.63 197.625 1630.5 184.497C1617.37 171.37 1610 153.565 1610 135L1750 135Z"></path>
             <path d="M1750 275C1750 293.565 1742.63 311.37 1729.5 324.497C1716.37 337.625 1698.57 345 1680 345C1661.43 345 1643.63 337.625 1630.5 324.497C1617.37 311.37 1610 293.565 1610 275L1750 275Z"></path>
