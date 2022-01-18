@@ -12,8 +12,8 @@ const Section_3 = () => {
                   <a className="text-decoration-none">
                     <div className="grid flex-row-reverse@md">
                       <div className="col-6@md overflow-hidden" aria-hidden="true">
-                        <div className="banner__text banner__figure1 width-100%">
-                          <h6>Administraciones <span>Vesta</span></h6>
+                        <div className="banner__figure banner__figure1 width-100%">
+                         
                         </div>
                       </div>
                 

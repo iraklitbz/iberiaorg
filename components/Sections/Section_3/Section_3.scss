@@ -90,24 +90,7 @@
 }
 
 .banner__figure1 {
-  background-size: 140px;
-  background-position: center center;
-  background-color: var(--color-primary);
-  position: relative;
-  > h6 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    color: rgba(255,255,255, 0.6);
-    text-transform: uppercase;
-    font-size: var(--text-lg);
-    span {
-      color: #fff;
-      font-weight: bold;
-    }
-  }
+  background-image: url('/img/about.jpg')
 }
 .banner__figure2 {
   background-image: url('/img/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg')
