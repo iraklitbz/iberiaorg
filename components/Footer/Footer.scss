@@ -38,15 +38,26 @@
 
 // colophon
 .main-footer__colophon {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin-top: 20px;
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
 }
 
 .main-footer__social {
   text-decoration: none;
   display: inline-block;
   color: var(--color-contrast-medium);
+  font-size: 30px;
+  margin-top: 40px;
+  display: inline-block;
+  @include breakpoint(md) {
+   font-size: 20px;
+   margin-top: 0px;
+  }
 
   &:hover {
     color: var(--color-contrast-high);
