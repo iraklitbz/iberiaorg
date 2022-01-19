@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Swal from 'sweetalert2';
 import Link from "next/link";
 
+
 const ContactoForm = () => {
     const router = useRouter()
     const [loader, setLoader] = useState(false);
@@ -84,6 +85,7 @@ const ContactoForm = () => {
     }
   return ( 
     <section className="contact-v3 position-relative z-index-1 margin-top-xxxl margin-bottom-xxl margin-top-xxl@md">
+       
         <div className="container max-width-xs margin-bottom-lg">
           <div className="text-component text-center">
             {router.query.name === 'presupuesto'? 

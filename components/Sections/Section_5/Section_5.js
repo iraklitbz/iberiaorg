@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 const Section_5 = () => {
   return ( 

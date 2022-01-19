@@ -1,7 +1,8 @@
-import Image from "next/image";
+
 const Section_6 = () => {
   return ( 
     <section className="padding-top-header position-relative z-index-1">
+      
           <div className="feature-v12 feature-v12--top feature-v12--offset-xs@md padding-top-xxxl padding-top-xxl@md ">
             <div className="container max-width-adaptive-xl">
               <div className="grid justify-center">
