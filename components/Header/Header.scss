@@ -108,6 +108,9 @@
   color: var(--color-contrast-higher);
   text-decoration: none;
   opacity: 0.88;
+  &:focus {
+    outline: none;
+  }
 
   &:hover, &.active { // style of :hover + selected link
     color: var(--color-primary);

@@ -45,6 +45,10 @@
 }
 
 .grid-service {
+  figure {
+    height: 400px;
+    overflow: hidden;
+  }
   figure.reveal-fx > div {
     height: 100%;
     > div {

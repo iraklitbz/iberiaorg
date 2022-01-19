@@ -12,7 +12,7 @@ const Section_6 = () => {
                 </div>
                 <div className="">
                   <figure className="feature-v12__bg-item reveal-fx reveal-fx--clip-x reveal-fx--is-visible">
-                    <Image className="block width-100%" width="1440" height="962" src="/img/tom.jpg" alt="Imagen decorativo sobre nosotros" />
+                    <img className="block width-100%" layout="responsive"  src="/img/tom.jpg" alt="Imagen decorativo sobre nosotros" />
                   </figure>
                 </div>
               </div>
