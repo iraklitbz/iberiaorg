@@ -88,12 +88,12 @@ const ContactoForm = () => {
           <div className="text-component text-center">
             {router.query.name === 'presupuesto'? 
              <>
-              <h1>Solicita tu presupuesto</h1>
+              <h1 className="text-bold">Solicita tu presupuesto</h1>
               <p>Tu comunidad en las mejores manos</p>
             </>
              : 
                <>
-                <h1>Contacta con nosotros</h1>
+                <h1 className="text-bold">Contacta con nosotros</h1>
                 <p>Si tienes alguna consulta, ¡no dudes en preguntarnos!</p>
               </>
              }

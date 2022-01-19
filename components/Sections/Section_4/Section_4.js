@@ -4,7 +4,7 @@ const Section_4 = () => {
     <section className="feature-v10 margin-top-xxxl">
         <div className="container max-width-adaptive-sm">
           <div className="text-component text-center">
-            <h1>Servicios</h1>
+            <h1 className="text-bold">Servicios</h1>
             <p className="color-contrast-medium">Como empresa administradora que somos, ofrecemos una amplia gama de servicios para que no tenga que preocuparse por nada. Gestionamos de principio a fin cualquier problema o impedimento que le pueda surgir.</p>
             <p className="color-contrast-medium">Si tiene alguna duda acerca de cualquiera de nuestros servicios, contacte con nosotros sin ningún compromiso y le daremos una solución.</p>
           </div>
