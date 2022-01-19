@@ -3,7 +3,7 @@ import Router from 'next/router'
 const Hero = () => {
   return ( 
     <section className="intro intro--top-overlay position-relative z-index-1 diagonal-section-bottom diagonal-section-bottom--flip-x bg-transparent margin-bottom-xxl">
-    <div className="container max-width-adaptive-lg padding-top-xxl padding-bottom-xxl">
+    <div className="container max-width-adaptive-lg padding-top-xxxl padding-bottom-xxl">
       <div className="max-width-xs ie:bg ie:padding-md" >
       
 
