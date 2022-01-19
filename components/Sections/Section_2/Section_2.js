@@ -36,7 +36,7 @@ const Section_2 = () => {
                 </Link>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Administración de Fincas</a></h2>
+                  <h2 className="text-md font-primary"><Link href="/Servicios#fincas" className="product-card-v2__title">Administración de Fincas</Link></h2>
 
                   
                 </div>
@@ -52,7 +52,7 @@ const Section_2 = () => {
                 </Link>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Gestión externa de seguros</a></h2>
+                  <h2 className="text-md font-primary"><Link href="/Servicios#seguros" className="product-card-v2__title">Gestión externa de seguros</Link></h2>
 
                  
                 </div>
@@ -68,7 +68,7 @@ const Section_2 = () => {
                 </Link>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Gestión de alquileres</a></h2>
+                  <h2 className="text-md font-primary"><Link href="/Servicios#alquileres" className="product-card-v2__title">Gestión de alquileres</Link></h2>
 
                  
                 </div>
@@ -84,7 +84,7 @@ const Section_2 = () => {
                 </Link>
 
                 <div className="padding-sm text-center">
-                  <h2 className="text-md font-primary"><a href="#0" className="product-card-v2__title">Trámites administrativos</a></h2>
+                  <h2 className="text-md font-primary"><Link href="/Servicios#tramites" className="product-card-v2__title">Trámites administrativos</Link></h2>
 
                   
                 </div>

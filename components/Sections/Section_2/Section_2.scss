@@ -31,6 +31,17 @@
 .prod-card-v2 {
   --rating-icon-size: 1.475em;
   position: relative;
+  h2 {
+    a {
+      color: var(--color-contrast-higher, #0d1317);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s linear;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
 }
 
 .prod-card-v2__img-link {
