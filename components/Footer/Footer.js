@@ -35,9 +35,10 @@ const Footer = () => {
 
             
 
-                <a  className="main-footer__social">
+                <Link  target="_blank" href="https://www.instagram.com/administracionesvesta/" >
+                  <a className="main-footer__social">
                   <svg className="icon" viewBox="0 0 16 16">
-                    <title>Follow us on Instagram</title>
+                    <title>Síguenos en instagram</title>
                     <g>
                       <circle cx="12.145" cy="3.892" r="0.96"></circle>
                       <path d="M8,12c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S10.206,12,8,12z M8,6C6.897,6,6,6.897,6,8 s0.897,2,2,2s2-0.897,2-2S9.103,6,8,6z">
@@ -46,7 +47,8 @@ const Footer = () => {
                       </path>
                     </g>
                   </svg>
-                </a>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

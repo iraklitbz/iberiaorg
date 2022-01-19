@@ -87,3 +87,9 @@
     margin-top: var(--space-xxxs);
   }
 }
+
+.footerlink {
+  &:hover {
+    color: var(--color-primary);
+  }
+}
