@@ -83,7 +83,7 @@ const ContactoForm = () => {
       
     }
   return ( 
-    <section className="contact-v3 position-relative z-index-1 margin-top-xxl margin-bottom-xxl">
+    <section className="contact-v3 position-relative z-index-1 margin-top-xxxl margin-bottom-xxl">
         <div className="container max-width-xs margin-bottom-lg">
           <div className="text-component text-center">
             {router.query.name === 'presupuesto'? 

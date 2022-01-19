@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Section_4 = () => {
   return ( 
-    <section className="feature-v10 margin-top-xxl">
+    <section className="feature-v10 margin-top-xxxl">
         <div className="container max-width-adaptive-sm">
           <div className="text-component text-center">
             <h1>Servicios</h1>
