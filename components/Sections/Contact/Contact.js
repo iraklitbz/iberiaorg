@@ -212,7 +212,8 @@ const ContactoForm = () => {
             <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
               <h6 className="font-bold margin-bottom-xxs">Teléfono</h6>
               <p className="line-height-md">
-                <p><a href="tel:+34747496359">+747 496 359</a></p>
+                <p><a href="tel:+34747446393">+34 747 44 63 93</a></p>
+                <p><a href="tel:++34747496404">+34 747 49 64 04</a></p>
               </p>
             </div>
           </div>
