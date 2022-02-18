@@ -4,24 +4,16 @@ import MainLayout from "../layouts/MainLayout";
 import Hero from "../components/Hero/Hero";
 import HomeList from "../components/HomeList/HomeList";
 import { useIntl } from "react-intl";
+import { client } from "../lib/wordpress/client";
 import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  useQuery,
   gql
 } from "@apollo/client";
 
 
-export default function Home({data, geoData}) {
-  let posts = {};
+export default function Home({posts}) {
  
   const intl = useIntl();
-  if(intl.locale === 'es') {
-    posts = data;
-  } else if(intl.locale === 'ge') {
-    posts = geoData[0].news.edges.map(element => element.node);
-  }
+
   return (
 
       <MainLayout> 
@@ -99,13 +91,9 @@ export default function Home({data, geoData}) {
   )
 }
 
-export async function getStaticProps(){
-  const client = new ApolloClient({
-    uri: 'https://iberiainfo.me/graphql',
-    cache: new InMemoryCache()
-  });
-  const response = await client.query({
-    query: gql`
+export async function getStaticProps({locale}){
+ 
+  const GET_HOMEPAGE = gql`
       query MyQuery {
         posts(where: {categoryName: "home"}) {
           edges {
@@ -147,14 +135,24 @@ export async function getStaticProps(){
           }
         }
       }    
-    `
-  });
-  const data = response.data.posts.edges.map(({node}) => node);
-  const geoData = response.data.geocategories.edges.map(({node}) => node);
+    `;
+  const {data} = await client.query({
+    query: GET_HOMEPAGE
+  })
+
+  let posts = {};
+
+  if(locale === 'es') {
+    posts = data.posts.edges.map(({node}) => node);
+  } else {
+     const getDataGeo = data.geocategories.edges.map(({node}) => node);
+     posts = getDataGeo[0].news.edges.map(element => element.node);
+  }
+ 
+  
   return {
     props: {
-      data,
-      geoData
+      posts
     }
   }
 }
