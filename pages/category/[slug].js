@@ -9,7 +9,6 @@ import {
 const Category = ({data}) => {
     return ( 
         <MainLayout>
-          <h2>Hola</h2>
             <BlogList 
                 posts={data}
             />
