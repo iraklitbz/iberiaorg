@@ -25,7 +25,6 @@ const ContactoForm = () => {
         setMsgError(false);
        
       }
-      console.log(checked)
     }
     const onChange = (e) => {
       setMensaje({
@@ -44,7 +43,7 @@ const ContactoForm = () => {
         email.trim() === '' || 
         email.trim() === '' || 
         texto.trim() === '' ) {
-            console.log('Error')
+    
             return;
         }
       
@@ -60,7 +59,6 @@ const ContactoForm = () => {
         }).then(async (res) => {
           if (res.status === 200) {
             await setTimeout(() =>{
-              console.log(res);
               setLoader(false)
               setMensaje({
                 name: '',
@@ -180,7 +178,7 @@ const ContactoForm = () => {
                     <input onChange={() => handleCheckClick()}  className="custom-checkbox__input" type="checkbox" aria-label="Checkbox label" />
                     <div className="custom-checkbox__control" aria-hidden="true"></div>
                   </div>
-                    <p>He leído y acepto la <Link href="/politica-de-privacidad">política de privacidad.</Link></p>
+                    <p>He leído y acepto la <Link href="/politica-de-privacidad"><a> política de privacidad. </a></Link></p>
                 </div>
                 { msgError ? <p className="error text--xs">Este campo es obligatorio</p> : null}
              

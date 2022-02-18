@@ -1,9 +1,7 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import MainLayout from "../layouts/MainLayout";
 const Privacidad = () => {
   return ( 
-    <div>
-    <Header />
+    <MainLayout>
     <section className="position-relative z-index-1 container max-width-adaptive-sm padding-y-lg margin-top-xl">
         <article className="article text-component">
               <h1>POLITICA DE PRIVACIDAD</h1>
@@ -194,8 +192,7 @@ const Privacidad = () => {
            
             </article>
         </section>
-      <Footer />
-  </div>
+  </MainLayout>
    );
 }
  

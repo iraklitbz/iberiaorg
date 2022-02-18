@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.9",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "codyhouse-framework": "^3.0.1",
     "dotenv": "^10.0.0",
+    "graphql": "^16.3.0",
     "next": "11.1.2",
+    "next-intl": "^2.4.0",
     "nodemailer": "^6.6.5",
-    "react": "17.0.2",
+    "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
     "react-cookie-consent": "^7.2.1",
     "react-dom": "17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^5.24.6",
     "sass": "^1.42.1",
     "sendmail": "^1.6.1",
     "sweetalert2": "^11.1.7"

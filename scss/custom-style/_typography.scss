@@ -1,33 +1,32 @@
+@use '../base' as *;
+
 // --------------------------------
 
-// (START) Global Editor code https://codyhouse.co/ds/globals/typography
+// (START) Global editor code https://codyhouse.co/ds/globals/typography
 
 // --------------------------------
 
 :root {
   // font family
-  --font-primary: Inter, sans-serif;
-  --font-secondary: 'Playfair Display', Georgia, serif;
+  --font-primary: Inter, system-ui, sans-serif;
 
-  // body font size
-  --text-base-size: 1em;
-  // type scale
-  --text-scale-ratio: 1.2;
+  // font size
+  --text-base-size: 1em; // body font-size
+  --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
   
-  // if Em units → --text-unit: 1em;
-  // if not Em units (e.g., Rem/Px) → --text-unit: var(--text-base-size);
-  --text-unit: 1em;
-
   // line-height
   --body-line-height: 1.4;
   --heading-line-height: 1.2;
-
+  
   // capital letters - used in combo with the lhCrop mixin
   --font-primary-capital-letter: 1;
-  --font-secondary-capital-letter: 1;
+
+  // unit - don't modify unless you want to change the typography unit (e.g., from Em to Rem units)
+  --text-unit: 1em; // if not Em units → --text-unit: var(--text-base-size);
 }
 
 :root, * {
+  // type scale
   --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
   --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
@@ -38,31 +37,33 @@
   --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
 }
 
-@supports(--css: variables) {
+
+
+
+@include breakpoint(md) {
   :root {
-    @include breakpoint(md) {
-      --text-base-size: 1.25em;
-      --text-scale-ratio: 1.25;
-    }
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
   }
 }
 
 body {
   font-family: var(--font-primary);
+  --body-font-weight: 500;
+  padding-top: var(--f-header-height);
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-secondary);
-  font-weight: 500;
+  font-family: var(--font-primary);
+  --heading-font-weight: 400;
 }
 
 // font family
-.font-primary { font-family: var(--font-primary);}
-.font-secondary { font-family: var(--font-secondary);}
+.font-primary { font-family: var(--font-primary); }
 
 // --------------------------------
 
-// (END) Global Editor Code
+// (END) Global editor code
 
 // --------------------------------
 
@@ -76,25 +77,59 @@ mark {
 
 .text-component {
   --line-height-multiplier: 1;
-  --text-vspace-multiplier: 1;
+  --text-space-y-multiplier: 1;
 
   blockquote {
     padding-left: 1em;
-    border-left: 4px solid var(--color-contrast-low);
+    border-left: 4px solid var(--color-contrast-lower);
   }
 
   hr {
-    background: var(--color-contrast-low);
+    background: var(--color-contrast-lower);
     height: 1px;
   }
 
   figcaption {
     font-size: var(--text-sm);
-    color: var(--color-contrast-medium);
+    color: var(--color-contrast-low);
   }
 }
 
 .article { // e.g., blog posts
   --body-line-height: 1.58; // set body line-height
-  --text-vspace-multiplier: 1.2; // increase vertical spacing
+  --text-space-y-multiplier: 1.2; // control vertical spacing
+}
+
+.ge {
+  :root, * {
+
+  // font size
+  --text-base-size: 1em; // body font-size
+  --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
+  
+  // line-height
+  --body-line-height: 1.4;
+  --heading-line-height: 1.4;
+  
+  // capital letters - used in combo with the lhCrop mixin
+  --font-primary-capital-letter: 1;
+
+  // unit - don't modify unless you want to change the typography unit (e.g., from Em to Rem units)
+    --text-unit: 0.9em; // if not Em units → --text-unit: var(--text-base-size);
+    // type scale
+    --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+    --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+    --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+    --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+  }
+  @include breakpoint(md) {
+    :root {
+      --text-base-size: 0.25em;
+      --text-scale-ratio: 0.25;
+    }
+  }
 }

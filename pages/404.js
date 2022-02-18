@@ -11,7 +11,7 @@ const FourOhFour = () => {
             <div className="text-component text-center margin-bottom-lg">
               <h1>Upsss! página no encotrada...</h1>
               <p>Lo sentimos, pero no podemos encontrar la página que buscabas.</p>
-              <p><Link href="/"> Ir a la página de inicio  </Link> o <Link href="/Contacto">  ponte en contacto con nosotros. </Link></p>
+              <p><Link href="/"><a> Ir a la página de inicio  </a></Link> o <Link href="/Contacto"><a> ponte en contacto con nosotros. </a></Link></p>
             </div>
 
             <div className="fof__animation">

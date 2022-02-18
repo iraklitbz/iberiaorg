@@ -1,0 +1,286 @@
+@use '../base' as *;
+
+
+:root {
+  --btns-button-radius: var(--radius-md);
+  --btns-button-padding-x: var(--space-sm);
+  --btns-button-padding-y: var(--space-xxs);
+}
+
+.btns { /* button group */
+  > *:first-child, *:first-child .btns__btn {
+    border-radius: var(--btns-button-radius) 0 0 var(--btns-button-radius);
+  }
+
+  > *:last-child, *:last-child .btns__btn {
+    border-radius: 0 var(--btns-button-radius) var(--btns-button-radius) 0;
+  }
+}
+
+.btns[class*="gap-xxxxs"], .btns[class*="gap-xxxs"], .btns[class*="gap-xxs"], .btns[class*="gap-xs"], .btns[class*="gap-sm"], .btns[class*="gap-md"], .btns[class*="gap-lg"], .btns[class*="gap-xl"], .btns[class*="gap-xxl"], .btns[class*="gap-xxxl"], .btns[class*="gap-xxxxl"] {
+  .btns__btn {
+    border-radius: var(--btns-button-radius) !important;
+  }
+}
+
+/* single button */
+.btns__btn {
+  @include reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: var(--btns-button-padding-y) var(--btns-button-padding-x);
+  background-color: alpha(var(--color-contrast-higher), 0.1);
+  transition: .2s;
+  cursor: pointer;
+  @include fontSmooth;
+
+  &:hover:not(.btns__btn--selected) {
+    background-color: alpha(var(--color-contrast-higher), 0.075);
+  }
+
+  &:focus {
+    z-index: 1;
+    outline: none;
+    box-shadow: 0 0 0 2px alpha(var(--color-contrast-higher), 0.2);
+  }
+}
+
+.btns__btn--selected { /* selected style */
+  background-color: var(--color-contrast-higher);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.btns__btn--disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+/* --radio, --checkbox */
+.btns--radio, .btns--checkbox {
+  > * {
+    position: relative;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    /* hide native buttons */
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+
+  input[type="radio"] + label,
+  input[type="checkbox"] + label {
+    user-select: none;
+  }
+
+  input[type="radio"]:focus + label,
+  input[type="checkbox"]:focus + label {
+    z-index: 1;
+    box-shadow: 0 0 0 2px alpha(var(--color-contrast-higher), 0.2);
+  }
+
+  input[type="radio"]:checked + label,
+  input[type="checkbox"]:checked + label {
+    /* checked state */
+    @extend .btns__btn--selected;
+  }
+}
+
+.btns__btn--icon {
+  padding: var(--btns-button-padding-y);
+
+  .icon {
+    display: block;
+  }
+}
+
+.btns {
+    a {
+        text-decoration: none;
+    }
+    .btns__btn {
+        height: 56px;
+        font-weight: bold;
+        min-width: 140px;
+       
+        &:hover {
+            transform: scale(1.03);
+            transition: transform .3s ease-out;
+        }
+    }
+    .btn-primary {
+        background-color: var(--color-primary);
+        color: #fff;
+        &:hover {
+            background-color: var(--color-primary-dark);
+            
+        }
+    }
+    .btn-secundary {
+        background-color: transparent;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+}
+
+.btn-fx-3 {
+  --transition-duration: 0.3s;
+  position: relative;
+  display: inline-block;
+
+  color: var(--color-bg);
+  line-height: 1;
+  text-decoration: none;
+  @include fontSmooth;
+
+  cursor: pointer;
+
+  will-change: transform;
+  transition: transform var(--transition-duration);
+
+  span { // text label
+    will-change: transform;
+    transition: opacity var(--transition-duration), transform var(--transition-duration) var(--ease-out);
+  }
+  
+  &::before { // animated background
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secundary);
+    border-radius: inherit;
+    will-change: transform;
+    transition: transform var(--transition-duration) var(--ease-out-back), box-shadow var(--transition-duration);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &:hover {
+    span { // text label
+      opacity: 0;
+      transform: scale(0.5);
+    }
+
+    &::before { // bg
+      transform: scale(1.1);
+    }
+
+    .btn-fx-3__icon-wrapper { // icon
+      transform: translateY(0);
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      box-shadow: var(--shadow-sm), 0 0 0 3px alpha(var(--color-contrast-higher), 0.15);
+    }
+  }
+}
+
+.btn-fx-3__inner {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  clip-path: inset(0%);
+}
+
+.btn-fx-3__icon-wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  will-change: transform;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration) var(--ease-out);
+  .bx {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    margin: auto;
+  }
+}
+
+// v4
+.btn-fx-4 {
+  --transition-duration: .3s;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-contrast-higher);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+
+  line-height: 1;
+  text-decoration: none;
+  color: var(--color-bg);
+  @include fontSmooth;
+
+  transition: var(--transition-duration);
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before { // shiny effect
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: alpha(var(--color-bg), 0.25);
+    will-change: transform;
+    transform: skewX(-15deg) translate(calc(-100% - 0.5em));
+    pointer-events: none;
+  }
+
+  &:hover {
+    &::before {
+      transform: skewX(-15deg) translate(calc(100% + 0.5em));
+      transition: transform var(--transition-duration);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--shadow-sm), 0 0 0 3px alpha(var(--color-contrast-higher), 0.15);
+  }
+}
+
+.breadcrumbs {}
+
+.breadcrumbs__item {
+  display: inline-block; // flex fallback
+  display: inline-flex;
+  align-items: center;
+}

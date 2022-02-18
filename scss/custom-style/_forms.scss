@@ -1,277 +1,197 @@
-// --------------------------------
+@use '../base' as *;
 
-// (START) Global Editor code https://codyhouse.co/ds/globals/forms
-
-// --------------------------------
 
 :root {
   --form-control-font-size: 1em;
-  --form-control-padding-x: var(--space-sm);
-  --form-control-padding-y: var(--space-xs);
-  --form-control-radius: 0px;
+  --form-control-padding-x: var(--space-xs);
+  --form-control-padding-y: var(--space-xxs);
+  --form-control-radius: var(--radius-md);
+  --select-dropdown-gap: 4px; 
+  --select-icon-size: 16px;
+  --select-icon-right-margin: var(--space-sm); // icon margin right
+  --select-text-icon-gap: var(--space-xxxs); // gap between text and icon
 }
 
 .form-control {
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-contrast-low);
-  transition: all 0.3s ease;
+  background: var(--color-bg-dark);
+  line-height: 1.2;
+  transition: all 0.2s ease;
 
   &::placeholder {
-    opacity: 1;
-    color: var(--color-contrast-medium);
+    opacity: 1;  
+    color: var(--color-contrast-low);
   }
 
   &:focus {
-    border-color: var(--color-primary);
-    box-shadow: inset 0 0 0 1px var(--color-primary), 0px 0px 0px 2px alpha(var(--color-primary), 0.2);
+    background: var(--color-bg);
+    box-shadow: 0px 0px 0px 2px var(--color-primary), var(--shadow-sm);
     outline: none;
   }
 }
 
-.form-control[disabled], .form-control[readonly] {
+.form-control--disabled, .form-control[disabled], .form-control[readonly] {
   cursor: not-allowed;
 }
 
-.form-control[aria-invalid="true"] {
-  border-color: var(--color-error);
+.form-control[aria-invalid="true"], .form-control.form-control--error {
+  box-shadow: 0px 0px 0px 2px var(--color-error);
 
   &:focus {
-    box-shadow: inset 0 0 0 1px var(--color-error), 0px 0px 0px 2px alpha(var(--color-error), 0.2);
+    box-shadow: 0px 0px 0px 2px var(--color-error), var(--shadow-sm);
   }
 }
 
 .form-legend {
-  color: var(--color-contrast-higher);
   font-size: var(--text-md);
-  line-height: 1.2;
-  margin-bottom: var(--space-xxs);
 }
 
 .form-label {
   font-size: var(--text-sm);
 }
 
-.tbl {
+
+
+.select {
   position: relative;
-  z-index: 1;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-
-  &::-webkit-scrollbar { // custom scrollbar style
-    height: 8px;
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-track { // progress bar
-    background-color: var(--color-contrast-lower);
-  }
-
-  &::-webkit-scrollbar-thumb { // handle
-    background-color: alpha(var(--color-contrast-higher), 0.9);
-    border-radius: 50em;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-contrast-higher);
-  }
 }
 
-.tbl__table {
+.select__input {
   width: 100%;
+  height: 100%;
+  padding-right: calc(var(--select-icon-size) + var(--select-icon-right-margin) + var(--select-text-icon-gap)) !important;
 }
 
-.tbl__body {
-  .tbl__row {
-    border-bottom: 1px solid var(--color-contrast-lower);
-    transition: .2s;
-
-    &:hover {
-      background-color: alpha(var(--color-contrast-higher), 0.05);
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.tbl__cell {
-  padding: var(--space-xs);
-}
-
-.notice {
-  position: fixed;
-  width: 100%;
+.select__icon {
+  width: var(--select-icon-size);
+  height: var(--select-icon-size);
   pointer-events: none;
-  z-index: var(--z-index-fixed-element, 10); 
+  position: absolute;
+  right: var(--select-icon-right-margin);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.notice__banner {
-  pointer-events: auto;
+
+.select__button { // created in JS - custom select control
+  width: 100%;
 }
 
-.notice__close-btn {
-  --size: 32px;
+.select__button[aria-expanded="true"] {
+  // custom select control if dropdown = visible
+} 
+
+.select__dropdown { // created in JS - custom select dropdown
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 200px;
+  max-height: 1px; // updated in JS
+  background-color: var(--color-bg-light);
+  box-shadow: var(--inner-glow), var(--shadow-md);
+  padding: var(--space-xxxs) 0;
+  border-radius: var(--radius-md);
+  z-index: var(--z-index-popover, 5); 
+  margin-top: var(--select-dropdown-gap);
+  margin-bottom: var(--select-dropdown-gap);
+  overflow: auto;
+
+  // use rem units
+  @include spaceUnit(1rem);
+  @include textUnit(1rem);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .2s, opacity .2s;
+}
+
+.select__dropdown--right { // change dropdown position based on the available space
+  right: 0;
+  left: auto;
+}
+
+.select__dropdown--up {
+  bottom: 100%;
+  top: auto;
+}
+
+.select__button[aria-expanded="true"] + .select__dropdown {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity .2s;
+}
+
+// custom <optgroup> list - include all <option>s if no <optgroup> available 
+.select__list {
+  list-style: none !important;
+}
+
+.select__list:not(:first-of-type) { 
+  padding-top: var(--space-xxs);
+}
+
+.select__list:not(:last-of-type) {
+  border-bottom: 1px solid alpha(var(--color-contrast-higher), 0.1);
+  padding-bottom: var(--space-xxs);
+}
+
+.select__item { // single item inside .select__list
   display: flex;
-  width: var(--size);
-  height: var(--size);
-  flex-shrink: 0;
-  justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: alpha(var(--color-contrast-higher), 0.5);
-  color: var(--color-bg);
+  padding: var(--space-xxs) var(--space-sm);
+  color: var(--color-contrast-high);
+  width: 100%;
+  text-align: left;
+  // truncate text
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select__item--optgroup { // custom <optgroup> label
+  font-size: var(--text-sm);
+  color: var(--color-contrast-medium);
+ }
+
+.select__item--option { // custom <option> label
+  cursor: pointer;
   transition: .2s;
 
   &:hover {
-    background-color: alpha(var(--color-contrast-higher), 0.7);
+    background-color: alpha(var(--color-contrast-higher), 0.075);
   }
 
-  .icon {
-    --size: 16px;
-  }
-}
-
-.notice--hide {
-  opacity: 0;
-  visibility: hidden;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .notice {
-    transition: opacity .3s, visibility 0s .3s;
+  &:focus {
+    outline: none;
+    background-color: alpha(var(--color-primary), 0.15);
   }
 
-  .notice__banner {
-    transition: transform .3s;
-  }
+  &[aria-selected=true] { // selected option
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    position: relative;
+    @include fontSmooth;
 
-  .notice--hide {
-    .notice__banner {
-      transform: translateY(20px);
+    &::after { // check icon next to the selected language
+      content: '';
+      display: block;
+      height: 1em;
+      width: 1em;
+      margin-left: auto;
+      background-color: currentColor;
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpolyline stroke-width='2' stroke='%23ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round' points='1,9 5,13 15,3 '/%3E%3C/svg%3E");
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 2px var(--color-primary-dark);
     }
   }
-}
 
-:root {
-  --custom-checkbox-size: 20px;
-  --custom-checkbox-radius: 4px;
-  --custom-checkbox-border-width: 1px;
-  --custom-checkbox-marker-size: 18px;
-}
-
-.custom-checkbox {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  font-size: var(--custom-checkbox-size);
-}
-
-.custom-checkbox__input {
-  position: relative;
-  /* hide native input */
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  height: 1em;
-  width: 1em;
-  display: block;
-  z-index: 1;
-}
-
-.custom-checkbox__control {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  pointer-events: none;
-  transition: transform .2s;
-  color: alpha(var(--color-contrast-low), 0.65); /* unchecked color */
-
-  &::before, &::after {
-    content: '';
-    position: absolute;
-  }
-
-  &::before { /* focus circle */
-    width: 160%;
-    height: 160%;
-    background-color: currentColor;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    border-radius: 50%;
-    will-change: transform;
-    transition: transform .2s;
-  }
-
-  &::after { /* custom checkbox */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    /* custom checkbox style */
-    background-color: var(--color-bg);
-    border-radius: var(--custom-checkbox-radius);
-    box-shadow: inset 0 0 0 var(--custom-checkbox-border-width) currentColor, var(--shadow-xs); /* border */
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 }
 
-.custom-checkbox__input:checked ~ .custom-checkbox__control,
-.custom-checkbox__input:indeterminate ~ .custom-checkbox__control {
-  &::after {
-    background-color: currentColor;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: var(--custom-checkbox-marker-size);
-    box-shadow: none;
-  }
-}
-
-.custom-checkbox__input:checked ~ .custom-checkbox__control {
-  color: var(--color-primary); /* checked color */
-
-  &::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpolyline points='2.5 8 6.5 12 13.5 3' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/%3E%3C/svg%3E");
-  }
-}
-
-.custom-checkbox__input:indeterminate ~ .custom-checkbox__control {
-  &::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cline x1='2' y1='8' x2='14' y2='8' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
-  }
-}
-
-.custom-checkbox__input:active ~ .custom-checkbox__control {
-  transform: scale(0.9);
-}
-
-.custom-checkbox__input:checked:active ~ .custom-checkbox__control,
-.custom-checkbox__input:indeterminate:active ~ .custom-checkbox__control {
-  transform: scale(1);
-}
-
-.custom-checkbox__input:focus ~ .custom-checkbox__control::before {
-  opacity: 0.2;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-/* --icon */
-.custom-checkbox--icon {
-  --custom-checkbox-size: 32px;
-
-  .custom-checkbox__control::after {
-    display: none;
-  }
-
-  .icon {
-    display: block;
-    color: inherit;
-    position: relative;
-    z-index: 1;
-  }
+html:not(.js ) .select .icon { // hide icon if JS = disabled
+  display: none;
 }
