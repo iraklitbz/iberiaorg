@@ -67,7 +67,7 @@ const Header = ({isPost}) => {
               {intl.locale === 'es' 
               ? 
               <li className="f-header__item">
-                <Link href={`/news`} >
+                <Link href={intl.locale === 'es' ? '/category/news' :  '/geo-category/news'} >
                   <a className="f-header__link">
                     <span>{intl.formatMessage({ id: "news" })}</span>
                     <svg className="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12">
@@ -77,11 +77,11 @@ const Header = ({isPost}) => {
                 </Link>
 
                   <ul className="f-header__dropdown">
-                        <li><Link href="/news"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "news" })} </a></Link></li>
-                        <li><Link href="/events"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "events" })} </a></Link></li>
-                        <li><Link href="/activities"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "activities" })} </a></Link></li>
-                        <li><Link href="/programs"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "programs" })} </a></Link></li>
-                        <li><Link href="/tours"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "tours" })} </a></Link></li>
+                        <li><Link href="/category/news"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "news" })} </a></Link></li>
+                        <li><Link href="/category/events"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "events" })} </a></Link></li>
+                        <li><Link href="/category/activities"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "activities" })} </a></Link></li>
+                        <li><Link href="/category/programs"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "programs" })} </a></Link></li>
+                        <li><Link href="/category/tours"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "tours" })} </a></Link></li>
                       </ul>
                     </li>
                     : 
@@ -96,11 +96,11 @@ const Header = ({isPost}) => {
                     </Link>
 
                   <ul className="f-header__dropdown">
-                    <li><Link href="/news-ge"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "news" })} </a></Link></li>
-                    <li><Link href="/events-ge"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "events" })} </a></Link></li>
-                    <li><Link href="/activities-ge"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "activities" })} </a></Link></li>
-                    <li><Link href="/programs-ge"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "programs" })} </a></Link></li>
-                    <li><Link href="/tours-ge"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "tours" })} </a></Link></li>
+                    <li><Link href="/geo-category/news"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "news" })} </a></Link></li>
+                    <li><Link href="/geo-category/events"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "events" })} </a></Link></li>
+                    <li><Link href="/geo-category/activities"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "activities" })} </a></Link></li>
+                    <li><Link href="/geo-category/programs"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "programs" })} </a></Link></li>
+                    <li><Link href="/geo-category/tours"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "tours" })} </a></Link></li>
                   </ul>
                 </li>
               

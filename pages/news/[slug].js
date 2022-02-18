@@ -1,7 +1,6 @@
 
 import React from "react";
 import MainLayout from "../../layouts/MainLayout";
-import { useIntl } from "react-intl";
 import { client } from "../../lib/wordpress/client";
 import {
   gql
@@ -69,7 +68,7 @@ export default Post;
 export async function getStaticPaths() {
   const GET_ALL_POSTS = gql`
     query AllPagesQuery {
-      news {
+      posts {
         nodes {
           slug
         }
@@ -82,7 +81,7 @@ export async function getStaticPaths() {
   })
 
 
-  const paths = data?.news?.nodes?.map((page) => ({
+  const paths = data?.posts?.nodes?.map((page) => ({
     params: {slug: page.slug}
   }))
 
@@ -95,7 +94,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}){
   const GET_PAGE_BY_SLUG = gql`
     query PageQuery($slug: ID!) {
-      new(id: $slug, idType: URI) {
+      post(id: $slug, idType: URI) {
         content
         slug
         id
@@ -117,7 +116,7 @@ export async function getStaticProps({params}){
 
   return {
     props: {
-      data: data?.new
+      data: data?.post
     },
     revalidate: 300
   }

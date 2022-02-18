@@ -13,7 +13,7 @@ const HomeList = ({posts}) => {
                     <div className="grid gap-sm">
                   
                     {posts.map((element => (
-                        <Link key={element.id} href={intl.locale === 'es' ? `/${element.slug}` :  `/news/${element.slug}`} aria-label="Link description">
+                        <Link key={element.id} href={intl.locale === 'es' ? `/news/${element.slug}` :  `/geo-news/${element.slug}`} aria-label="Link description">
                             <a className="card-v12 padding-top-sm radius-lg shadow-sm col-6@sm col-3@md">
                                 <div className="position-relative">
                                 <figure className="card-v12__figure radius-sm">

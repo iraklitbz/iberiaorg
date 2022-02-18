@@ -1,12 +1,11 @@
 
 import React from "react";
-import MainLayout from "../layouts/MainLayout";
-import { useIntl } from "react-intl";
-import { client } from "../lib/wordpress/client";
+import MainLayout from "../../layouts/MainLayout";
+import { client } from "../../lib/wordpress/client";
 import {
   gql
 } from "@apollo/client";
-const Post = ({data}) => {
+const Geopost = ({data}) => {
   return ( 
     <MainLayout>
           <article>
@@ -63,13 +62,13 @@ const Post = ({data}) => {
    );
 }
  
-export default Post;
+export default Geopost;
 
 
 export async function getStaticPaths() {
   const GET_ALL_POSTS = gql`
     query AllPagesQuery {
-      posts {
+      news {
         nodes {
           slug
         }
@@ -82,7 +81,7 @@ export async function getStaticPaths() {
   })
 
 
-  const paths = data?.posts?.nodes?.map((page) => ({
+  const paths = data?.news?.nodes?.map((page) => ({
     params: {slug: page.slug}
   }))
 
@@ -95,7 +94,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}){
   const GET_PAGE_BY_SLUG = gql`
     query PageQuery($slug: ID!) {
-      post(id: $slug, idType: URI) {
+      new(id: $slug, idType: URI) {
         content
         slug
         id
@@ -117,7 +116,7 @@ export async function getStaticProps({params}){
 
   return {
     props: {
-      data: data?.post
+      data: data?.new
     },
     revalidate: 300
   }

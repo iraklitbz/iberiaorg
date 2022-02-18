@@ -15,6 +15,7 @@
     "codyhouse-framework": "^3.0.1",
     "dotenv": "^10.0.0",
     "graphql": "^16.3.0",
+    "moment": "^2.29.1",
     "next": "11.1.2",
     "next-intl": "^2.4.0",
     "nodemailer": "^6.6.5",
