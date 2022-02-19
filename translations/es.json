@@ -49,6 +49,10 @@
     "ourteam_team2_1": "Irakli",
     "ourteam_team2_2": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
     "ourteam_team3_1": "Lorem ipsum",
-    "ourteam_team3_2": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+    "ourteam_team3_2": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+    "seemore": "Ver más",
+    "loading": "Cargando...",
+    "error_charge_news": "Lo sentimos, pero ha ocurrido un error al cargar las noticias, intenta otra vez en un rato, gracias.",
+    "no_more_news": "Actualmente no tenemos noticias"
 
 }
