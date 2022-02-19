@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import "../scss/main.scss";
 import { IntlProvider } from 'react-intl';
 import { useRouter } from "next/router"
+import { client } from "../lib/wordpress/client";
 
+import { ApolloProvider } from "@apollo/client";
 const languages = {
   es: require('../translations/es.json'),
   ge: require('../translations/ge.json')
@@ -20,9 +22,11 @@ function MyApp({ Component, pageProps }) {
   const { locale, defaultLocale } = router;
   const messages = languages[locale];
   return (
-    <IntlProvider messages={messages} locale={locale} defaultLocale={defaultLocale}>
-        <Component {...pageProps} />
-    </IntlProvider>
+    <ApolloProvider client={client}>
+      <IntlProvider messages={messages} locale={locale} defaultLocale={defaultLocale}>
+          <Component {...pageProps} />
+      </IntlProvider>
+    </ApolloProvider>
   )
 }
 

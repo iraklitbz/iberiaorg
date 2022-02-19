@@ -6,11 +6,13 @@ import {
   gql
 } from "@apollo/client";
 
-const Category = ({data}) => {
+const Category = ({data, hasNextPage, endCursor}) => {
     return ( 
         <MainLayout>
             <BlogList 
                 posts={data}
+                hasNextPage={hasNextPage}
+                endCursor={endCursor}
             />
         </MainLayout>
      );
@@ -46,8 +48,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}){
   const GET_PAGE_BY_SLUG = gql`
-    query PageQuery($slug: String!) {
-      posts(where: {categoryName: $slug}) {
+    query GetBookTitles($first: Int!, $slug: String!) {
+      posts(first: $first, where: {categoryName: $slug}) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
         edges {
           node {
             content
@@ -68,12 +74,17 @@ export async function getStaticProps({params}){
 
   const {data} = await client.query({
     query: GET_PAGE_BY_SLUG,
-    variables: {slug: params.slug}
+    variables: {
+      slug: params.slug,
+      first: 2
+    }
   })
 
   return {
     props: {
-      data: data?.posts.edges.map(({node}) => node)
+      data: data?.posts.edges.map(({node}) => node),
+      hasNextPage: data?.posts.pageInfo.hasNextPage,
+      endCursor: data?.posts.pageInfo.endCursor
     },
     revalidate: 300
   }

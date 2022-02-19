@@ -1,7 +1,44 @@
 import React from "react";
 import moment from "moment";
+import { useQuery, gql } from "@apollo/client";
 import Link from "next/link";
-const BlogList = ({posts}) => {
+const GET_POSTS = gql`
+    query getPosts($first: Int!, $after: String, $slug: String!) {
+      posts(first: $first, after: $after, where: {categoryName: $slug}) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        edges {
+          node {
+            content
+            slug
+            id
+            title
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            excerpt
+          }
+        }
+      }
+    }
+  `;
+const BATCH_SIZE = 10;
+const BlogList = ({posts, hasNextPage, endCursor}) => {
+    const { data, loading, error, fetchMore } = useQuery(GET_POSTS, {
+        variables: { 
+            first: BATCH_SIZE, 
+            after: endCursor,
+            slug: posts[0].slug
+        },
+        notifyOnNetworkStatusChange: true,
+      });
+    const masNoticias = data?.posts.edges.map((edge) => edge.node);
+    console.log(masNoticias)
+
     return ( 
         <div className="position-relative z-index-1 padding-y-xl">
             <div className="container max-width-adaptive-lg">
@@ -87,7 +124,23 @@ const BlogList = ({posts}) => {
                
                 </div>
 
-              
+                {hasNextPage ? (
+                        <form
+                        method="post"
+                        onSubmit={(event) => {
+                            event.preventDefault();
+                            fetchMore({ variables: { 
+                                after: endCursor
+                            } });
+                        }}
+                        >
+                        <button type="submit" disabled={loading}>
+                            {loading ? "Loading..." : "Load more"}
+                        </button>
+                        </form>
+                    ) : (
+                        <p>✅ All posts loaded.</p>
+                    )}
             </div>
             </div>
 
