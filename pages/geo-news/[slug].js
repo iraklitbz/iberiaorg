@@ -14,14 +14,14 @@ const Geopost = ({data}) => {
                       <div className="container max-width-adaptive-sm">
                           <div className="grid position-relative headline-box">
                               <div className="margin-bottom-md">
-                              <h1 className="text-xxxl">{data.title}</h1>
+                              <h1 className="text-xxxl">{data?.title}</h1>
                               </div>
 
-                              {data.excerpt 
+                              {data?.excerpt 
                               ? 
                               <div className="col-8@md margin-left-auto@md">
                                   <div className="text-component">
-                                      <div dangerouslySetInnerHTML={{ __html: data.excerpt }} />
+                                      <div dangerouslySetInnerHTML={{ __html: data?.excerpt }} />
                                   </div>
 
                               </div>
@@ -40,9 +40,9 @@ const Geopost = ({data}) => {
                   </div>
 
                   <figure className="feature-v5__media container max-width-lg@lg max-width-sm position-relative z-index-10">
-                      {data.featuredImage 
+                      {data?.featuredImage 
                       ? 
-                      <img className="block width-100% shadow-lg" src={data.featuredImage.node.sourceUrl} alt={data.title} />
+                      <img className="block width-100% shadow-lg" src={data?.featuredImage.node.sourceUrl} alt={data?.title} />
                       : 
                           <div className="noImagen radius-md padding-y-xxxl">
                               <img width="245px" src="https://iberiainfo.me/wp-content/uploads/2022/02/logo_iberia_icon.svg" />
@@ -54,7 +54,7 @@ const Geopost = ({data}) => {
 
               <div className="container max-width-adaptive-sm margin-bottom-xl js-sticky-sharebar-target">
                   
-                  <div className="text-component line-height-lg text-space-y-md article-box" dangerouslySetInnerHTML={{ __html: data.content }} />
+                  <div className="text-component line-height-lg text-space-y-md article-box" dangerouslySetInnerHTML={{ __html: data?.content }} />
                   
               </div>
           </article>

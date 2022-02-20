@@ -5,4 +5,5 @@ module.exports = {
     defaultLocale: 'es',
     localeDetection: false
   },
+  eslint: { ignoreDuringBuilds: true }
 }
