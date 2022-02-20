@@ -176,7 +176,7 @@ return (
                           <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
                           <h6 className="font-bold margin-bottom-xxs">{intl.formatMessage({ id: "contactemail" })}</h6>
                           <dd>
-                              <a href="mailto:info@administracionesvesta.com">asociacioniberia@gmail.com</a>
+                              <a href="mailto:camaradegeorgia@gmail.com">camaradegeorgia@gmail.com</a>
                           </dd>
                           </div>
                       

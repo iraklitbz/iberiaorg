@@ -36,7 +36,7 @@ const Aviso = () => {
   <li><strong>Cookies analíticas:</strong> son aquellas que permiten al responsable de las mismas el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.</li>
   <li><strong>Cookies publicitarias:</strong> son aquellas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado en base a criterios como el contenido editado o la frecuencia en la que se muestran los anuncios.</li>
   <li><strong>Cookies de publicidad comportamental</strong>: recogen información sobre las preferencias y elecciones personales del usuario (retargeting) para permitir la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado</li>
-  <li><strong>Cookies sociales</strong>: son establecidas por las plataformas de redes sociales en los servicios para permitirle compartir contenido con sus amigos y redes. Las plataformas de medios sociales tienen la capacidad de rastrear su actividad Administraciones Vesta, S.A.P. 3Administraciones Vesta, S.A.en línea fuera de los Servicios. Esto puede afectar al contenido y los mensajes que ve en otros servicios que visita.</li>
+  <li><strong>Cookies sociales</strong>: son establecidas por las plataformas de redes sociales en los servicios para permitirle compartir contenido con sus amigos y redes. Las plataformas de medios sociales tienen la capacidad de rastrear su actividad Administraciones Iberia.org, S.A.P. 3Administraciones Iberia.org, S.A.en línea fuera de los Servicios. Esto puede afectar al contenido y los mensajes que ve en otros servicios que visita.</li>
   <li><strong>Cookies de afiliados:</strong> permiten hacer un seguimiento de las visitas procedentes de otras webs, con las que el sitio web establece un contrato de afiliación (empresas de afiliación.</li>
   <li><strong>Cookies de seguridad</strong>: almacenan información cifrada para evitar que los datos guardados en ellas sean vulnerables a ataques maliciosos de terceros.</li>
   </ul>
@@ -65,7 +65,7 @@ const Aviso = () => {
 <h2>TRATAMIENTO DE DATOS PERSONALES</h2>
 
 
-<p>Administraciones Vesta, S.A. es el <strong>Responsable del tratamiento </strong>de los datos personales del <strong>Interesado</strong> y le informa de que estos datos serán tratados de conformidad con lo dispuesto en el Reglamento (UE)2016/679, de 27 de abril de 2016 (GDPR), por lo que se le facilita la siguiente información del tratamiento</p>
+<p>Administraciones Iberia.org, S.A. es el <strong>Responsable del tratamiento </strong>de los datos personales del <strong>Interesado</strong> y le informa de que estos datos serán tratados de conformidad con lo dispuesto en el Reglamento (UE)2016/679, de 27 de abril de 2016 (GDPR), por lo que se le facilita la siguiente información del tratamiento</p>
 
 
 
@@ -101,11 +101,11 @@ const Aviso = () => {
 
 
 
-<p>Administraciones Vesta, Mail: info@administracionesvesta.com</p>
+<p>Administraciones Iberia.org, Mail: info@administracionesIberia.org.com</p>
 
 
 
-<p>Datos de contacto del delegado de protección de datos: info@administracionesvesta.com</p>
+<p>Datos de contacto del delegado de protección de datos: info@administracionesIberia.org.com</p>
 
 
 
@@ -139,13 +139,13 @@ const Aviso = () => {
       <td className="tbl__row"><strong>Plazo</strong></td>
     </tr>
       <tr className="tbl__row">
-        <td className="tbl__row">administracionvesta .com</td>
+        <td className="tbl__row">administracionIberia.org .com</td>
         <td className="tbl__row"><strong>_ga_X7236ZKP41</strong></td>
         <td className="tbl__row">Cookie necesaria para la utilización de las opciones yservicios del sitio web</td>
         <td className="tbl__row">en 2 años</td>
       </tr>
         <tr className="tbl__row">
-          <td className="tbl__row">administracionvesta .com</td>
+          <td className="tbl__row">administracionIberia.org .com</td>
           <td className="tbl__row"><strong>cookie_notice_accepted</strong></td>
           <td className="tbl__row">Cookie necesaria para la utilización de las opciones yservicios del sitio web</td>
           <td className="tbl__row">en un mes</td>
@@ -167,7 +167,7 @@ const Aviso = () => {
       <td className="tbl__cell"><strong>Todas</strong></td>
     </tr>
     <tr className="tbl__row">
-      <td className="tbl__cell">administracionvesta.com</td>
+      <td className="tbl__cell">administracionIberia.org.com</td>
       <td className="tbl__cell"><strong>_ga</strong></td>
       <td className="tbl__cell">ID utiliza para identificar a los usuarios</td>
       <td className="tbl__cell">en 2 años</td>

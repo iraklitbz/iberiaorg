@@ -8,19 +8,19 @@ const Privacidad = () => {
             
               <p className="text-md color-contrast-medium">ÚLTIMA MODIFICACIÓN: 11/11/2021</p>
             
-              <p>La Política de Privacidad forma parte de las Condiciones Generales que rigen la Página Web junto con la Política de Cookies y el Aviso Legal. Administraciones Vesta se reserva el derecho a modificar o adaptar la presente Política de Privacidad en todo momento. Por lo tanto, le recomendamos que revise la misma cada vez que acceda a la Página Web. En el supuesto de que usuario se haya registrado en la página web y acceda a su cuenta o perfil, al acceder a la misma, se le informará en el supuesto de que haya habido modificaciones sustanciales en relación con el tratamiento de sus datos personales.</p>
+              <p>La Política de Privacidad forma parte de las Condiciones Generales que rigen la Página Web junto con la Política de Cookies y el Aviso Legal. Iberia.org se reserva el derecho a modificar o adaptar la presente Política de Privacidad en todo momento. Por lo tanto, le recomendamos que revise la misma cada vez que acceda a la Página Web. En el supuesto de que usuario se haya registrado en la página web y acceda a su cuenta o perfil, al acceder a la misma, se le informará en el supuesto de que haya habido modificaciones sustanciales en relación con el tratamiento de sus datos personales.</p>
             
             
               <h2>¿Quién es el responsable del tratamiento de tus datos?</h2>
             
               <p>Los datos que se recojan o nos facilites voluntariamente por medio de la Página Web, ya sea por la navegación en la misma, así como todos aquellos que nos puedas facilitar en los formularios de contacto, vía email o por teléfono, serán recabados y tratados por el Responsable del Tratamiento, cuyos datos se indican a continuación:</p>
             
-              <p>Administraciones Vesta ( Sara Isabel González Díaz de Villafranca) NIF: 03142611Y Domicilio: C/ Muro, 07011 Palma de Mallorca, Illes Balears</p>
+              <p>Iberia.org ( Sara Isabel González Díaz de Villafranca) NIF: 03142611Y Domicilio: C/ Muro, 07011 Palma de Mallorca, Illes Balears</p>
             
-              <h2>Contacto en Administraciones Vesta para la protección de tus datos personales</h2>
+              <h2>Contacto en Iberia.org para la protección de tus datos personales</h2>
               <ul className="list list--ul">
                 <li>Tfno: 747496404</li>
-                <li>Mail: info@administracionesvesta.com </li>
+                <li>Mail: camaradegeorgia@gmail.com </li>
               </ul>
             
               <p>Si, por cualquier motivo, quieres ponerte en contacto con nosotros en cualquier cuestión relacionada con el tratamiento de sus datos personales o privacidad (con nuestro Delegado de Protección de Datos), puedes hacerlo a través de cualquiera de los medios indicados anteriormente.</p>
@@ -28,7 +28,7 @@ const Privacidad = () => {
               <h2>¿Qué datos recopilamos a través de la página web?</h2>
             
             
-              <p>Por el simple hecho de navegar en la Página Web, Administraciones Vesta recopilará información referente a:</p>
+              <p>Por el simple hecho de navegar en la Página Web, Iberia.org recopilará información referente a:</p>
               <ul className="list list--ul">
                 <li>Dirección IP</li>
                 <li>Versión del navegador. </li>
@@ -41,7 +41,7 @@ const Privacidad = () => {
              <h2>Registro del usuario en la página web/ Envío de formularios</h2>
              <p>Para acceder a determinados productos y/o servicios, como la reserva, es preciso que el usuario cumplimente un formulario. Para ello, en el formulario de registro, se solicitan una serie de datos personales. Los datos son necesarios y obligatorios para llevar a cabo tal registro. En el caso de no facilitar tales campos, no se llevará a cabo el registro. En este caso, los datos de navegación, se asociarán a los de registro del usuario, identificando al mismo usuario concreto que navega por la Página Web. De esta forma, se podrá personalizar la oferta de productos y/o servicios que, a nuestro criterio, más se ajuste al usuario.</p>
             
-              <p>Los datos de registro de cada usuario se incorporarán a las bases de datos de <strong>Administraciones Vesta</strong>, junto con el historial de operaciones realizadas por el mismo, y se almacenarán en las mismas mientras no se elimine la cuenta del usuario registrado. Una vez eliminada tal cuenta, dicha información será apartada de nuestras bases de datos, manteniendo apartados durante 10 años aquellos datos relativos a las transacciones realizadas, sin que se accedan o alteren los mismos, con el fin de dar cumplimiento a los plazos legalmente vigentes. Los datos que no se encuentren vinculados a las transacciones realizadas se mantendrán salvo que retire el consentimiento, en cuyo caso serán eliminados inmediatamente (siempre teniendo en cuenta los plazos legales).</p>
+              <p>Los datos de registro de cada usuario se incorporarán a las bases de datos de <strong>Iberia.org</strong>, junto con el historial de operaciones realizadas por el mismo, y se almacenarán en las mismas mientras no se elimine la cuenta del usuario registrado. Una vez eliminada tal cuenta, dicha información será apartada de nuestras bases de datos, manteniendo apartados durante 10 años aquellos datos relativos a las transacciones realizadas, sin que se accedan o alteren los mismos, con el fin de dar cumplimiento a los plazos legalmente vigentes. Los datos que no se encuentren vinculados a las transacciones realizadas se mantendrán salvo que retire el consentimiento, en cuyo caso serán eliminados inmediatamente (siempre teniendo en cuenta los plazos legales).</p>
             <p>La base legal para el tratamiento de tus datos personales es la ejecución de un contrato entre las partes.<br /> En relación con la remisión de comunicaciones y promociones por vía electrónica y la respuesta a las solicitudes de información, la legitimación del tratamiento es el consentimiento del usuario.</p>
             <p>Las finalidades del tratamiento, serán las siguientes:</p>
             <ol className="list list--ol">
@@ -52,7 +52,7 @@ const Privacidad = () => {
                 <li>Gestionar todas las utilidades y/ o servicios que ofrece la plataforma al usuario.</li>
               </ol>
               <p>Así, te informamos que podrás recibir comunicaciones vía email y/o en tu teléfono, con el fin de informarte de posibles incidencias, errores, problemas y/o estado de tus solicitudes.</p>
-              <p>Para el envío de comunicaciones comerciales, se solicitará el consentimiento expreso del usuario a la hora de realizar el registro. A este respecto, el usuario podrá revocar el consentimiento prestado, dirigiéndose a <strong>Administraciones Vesta</strong>, haciendo uso de los medios indicados anteriormente. En cualquier caso, en cada comunicación comercial, se le dará la posibilidad de darse de baja en la recepción de las mismas, ya sea por medio de un link y/o dirección de correo electrónico.</p>
+              <p>Para el envío de comunicaciones comerciales, se solicitará el consentimiento expreso del usuario a la hora de realizar el registro. A este respecto, el usuario podrá revocar el consentimiento prestado, dirigiéndose a <strong>Iberia.org</strong>, haciendo uso de los medios indicados anteriormente. En cualquier caso, en cada comunicación comercial, se le dará la posibilidad de darse de baja en la recepción de las mismas, ya sea por medio de un link y/o dirección de correo electrónico.</p>
               <p>Si eres alguno de los siguientes colectivos, consulta la información desplegable:</p>
             <h4><strong>CONTACTOS DE LA WEB O DEL CORREO ELECTRÓNICO</strong></h4>
             <h4>¿Con que finalidades vamos a tratar tus datos personales?</h4>
@@ -153,16 +153,16 @@ const Privacidad = () => {
               <h4>¿Qué medidas de seguridad aplicamos?</h4>
             <p>Puedes estar tranquilo: Hemos adoptado un nivel óptimo de protección de los datos personales que manejamos, y hemos instalado todos los medios y medidas técnicas a nuestra disposición, según el estado de la tecnología, para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos personales.</p>
             <h4>¿En qué medida se automatizará la toma de decisiones?</h4>
-            <p><strong>Administraciones Vesta</strong> no utiliza procesos de toma de decisiones totalmente automatizadas para entablar, desarrollar o terminar una relación contractual con el usuario. En caso de que usemos esos procesos en un caso particular, te mantendremos informado y te comunicaremos tus derechos a este respecto si así lo prescribe la ley.</p>
+            <p><strong>Iberia.org</strong> no utiliza procesos de toma de decisiones totalmente automatizadas para entablar, desarrollar o terminar una relación contractual con el usuario. En caso de que usemos esos procesos en un caso particular, te mantendremos informado y te comunicaremos tus derechos a este respecto si así lo prescribe la ley.</p>
             <h4>¿Tendrá lugar la elaboración de perfiles?</h4>
             <p>Con el fin de poder ofrecerte productos y/o servicios de acuerdo con tus intereses y mejorar tu experiencia de usuario, podremos elaborar un "perfil comercial" en base a la información facilitada. No obstante, no se tomarán decisiones automatizadas en base a dicho perfil.</p>
             
             <h4>¿A qué destinatarios se comunicarán tus datos?</h4>
-            <p>A <strong>Administraciones Vesta.</strong></p>
+            <p>A <strong>Iberia.org.</strong></p>
             <p>Tus datos no se cederán a terceros, salvo obligación legal. En concreto se comunicarán a la Agencia Estatal de la Administración Tributaria y a bancos y entidades financieras para el cobro del servicio prestado o producto adquirido, así como a los encargados del tratamiento necesarios para la ejecución del acuerdo. En caso de compra o pago, si eliges alguna aplicación, web, plataforma, tarjeta bancaria, o algún otro servicio online, tus datos se cederán a esa plataforma o se tratarán en su entorno, siempre con la máxima seguridad.</p>
-            <p>En el supuesto de que nos hayas dado tu consentimiento para el tratamiento de tu nombre e imágenes y otras informaciones, relacionadas con la actividad de <strong>Administraciones Vesta</strong>, se divulgarán en las diferentes redes sociales y página web de <strong>Administraciones Vesta</strong>.</p>
+            <p>En el supuesto de que nos hayas dado tu consentimiento para el tratamiento de tu nombre e imágenes y otras informaciones, relacionadas con la actividad de <strong>Iberia.org</strong>, se divulgarán en las diferentes redes sociales y página web de <strong>Iberia.org</strong>.</p>
             <p>Transferencias internacionales.</p>
-            <p>En caso de ser necesaria la realización de transferencias internacionales de datos por parte de <strong>Administraciones Vesta</strong>, sólo se realizarán a entidades que hayan demostrado que cumplen con el nivel de protección y garantías de acuerdo con los parámetros y exigencias previstas en la normativa vigente en materia de protección de datos, especialmente en lo dispuesto en el Reglamento (UE) 679/ 2016, de Protección de datos (RGPD), o cuando exista un habilitación legal para realizar la transferencia internacional. En caso de trabajar en un sistema de carpetas compartidas en aplicaciones tipo Dropbox, Google Drive, Microsoft OneDrive, Amazon, Apple, HubSpot, etc...se realizará una transferencia internacional a Estados Unidos bajo la habilitación del artículo 49.c) del Reglamento General de Protección de Datos o cualquier otro mecanismo que garantice un nivel de protección de datos equivalente al previsto en la normativa europea.</p>
+            <p>En caso de ser necesaria la realización de transferencias internacionales de datos por parte de <strong>Iberia.org</strong>, sólo se realizarán a entidades que hayan demostrado que cumplen con el nivel de protección y garantías de acuerdo con los parámetros y exigencias previstas en la normativa vigente en materia de protección de datos, especialmente en lo dispuesto en el Reglamento (UE) 679/ 2016, de Protección de datos (RGPD), o cuando exista un habilitación legal para realizar la transferencia internacional. En caso de trabajar en un sistema de carpetas compartidas en aplicaciones tipo Dropbox, Google Drive, Microsoft OneDrive, Amazon, Apple, HubSpot, etc...se realizará una transferencia internacional a Estados Unidos bajo la habilitación del artículo 49.c) del Reglamento General de Protección de Datos o cualquier otro mecanismo que garantice un nivel de protección de datos equivalente al previsto en la normativa europea.</p>
             <h4>¿Qué Derechos tienes?</h4>
             <ul className="list list--ul">
                 <li>A saber si estamos tratando tus datos o no.</li>
@@ -185,7 +185,7 @@ const Privacidad = () => {
              
               </ul> 
               <p>Tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos, en el supuesto de que consideres que no se ha atendido convenientemente la solicitud de tus derechos.</p>
-           <p>El plazo máximo para resolver por <strong>Administraciones Vesta</strong>, es de un mes, a contar desde la efectiva recepción de tu solicitud por nuestra parte.</p>
+           <p>El plazo máximo para resolver por <strong>Iberia.org</strong>, es de un mes, a contar desde la efectiva recepción de tu solicitud por nuestra parte.</p>
            <p>Tienes derecho a revocar en cualquier momento el consentimiento para cualquiera de los tratamientos para los que lo has otorgado.</p>
            <h4>¿Tratamos cookies?</h4>
            <p>Si usamos otro tipo de cookies que no sean las necesarias, podrás consultar la política de cookies en el enlace correspondiente desde el inicio de nuestra web.</p>

@@ -205,7 +205,7 @@ const ContactoForm = () => {
             <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
               <h6 className="font-bold margin-bottom-xxs">Email</h6>
               <dd>
-                <a href="mailto:info@administracionesvesta.com">info@administracionesvesta.com</a>
+                <a href="mailto:camaradegeorgia@gmail.com">camaradegeorgia@gmail.com</a>
               </dd>
             </div>
           
