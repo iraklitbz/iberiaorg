@@ -9,11 +9,11 @@ import {
 } from "@apollo/client";
 
 const GET_GEO_POSTS = gql`
-    query getGeoPosts($first: Int, $after: String) {
-        geocategories(where: {slug: "activities"}) {
+    query getGeoPosts($first: Int, $after: String, $slug: String!) {
+        geocategories(where: {search: $slug}) {
             edges {
               node {
-                news(first: $first, after: $after) {
+                news(first: $first, after: $after, where: {orderby: {field: DATE, order: DESC}}) {
                   pageInfo {
                     hasNextPage
                     endCursor
@@ -44,9 +44,45 @@ const Category = ({params}) => {
   const { data, loading, error, fetchMore } = useQuery(GET_GEO_POSTS, {
     variables: { 
         first: 7,
+        slug: params,
         after: null
     },
   });
+
+  if (error) {
+    return (
+      <MainLayout>
+        <div className="container max-width-adaptive-lg padding-y-xl text-center">
+          <h4 className="text-center">{intl.formatMessage({ id: "error_charge_news" })}</h4>
+        </div>
+      </MainLayout>
+    );
+  }
+
+  if (!data && loading) {
+    return (
+      <MainLayout>
+        <div className="container max-width-adaptive-lg padding-y-xl text-center">
+          <div className="circle-loader circle-loader--v2" role="alert">
+            <p className="circle-loader__label">{intl.formatMessage({ id: "loading" })}</p>
+            <div aria-hidden="true">
+              <svg className="circle-loader__svg" width="48" height="48" viewBox="0 0 48 48"><circle className="circle-loader__base" cx="24" cy="24" r="19" fill="none" stroke="currentColor" strokeWidth="2"/><circle className="circle-loader__fill" cx="24" cy="24" r="19" fill="none" stroke="currentColor" strokeWidth="2"/></svg>
+            </div>
+          </div>
+        </div>
+      </MainLayout>
+    )
+  }
+
+  if (!data?.geocategories.edges[0].node.news.edges.length) {
+    return (
+      <MainLayout>
+        <div className="container max-width-adaptive-lg padding-y-xl text-center">
+          <h3 className="text-center">{intl.formatMessage({ id: "no_more_news" })}</h3>
+        </div>
+      </MainLayout>
+    )
+  }
 
 
 

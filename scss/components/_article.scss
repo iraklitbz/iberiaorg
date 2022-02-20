@@ -91,18 +91,22 @@
 
 // --featured
 @include breakpoint(md) {
-  .story--featured {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: var(--space-md);
-    align-items: center;
+  .story {
+    &:first-child {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-gap: var(--space-md);
+      align-items: center;
+      flex-basis: 100%;
+      max-width: 100%;
 
-    .story__img {
-      margin: 0;
-    }
+      .story__img {
+        margin: 0;
+      }
 
-    .story__title {
-      font-size: var(--text-xxl);
+      .story__title {
+        font-size: var(--text-xxl);
+      }
     }
   }
 }
