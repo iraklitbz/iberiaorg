@@ -1,17 +1,14 @@
 import React, {useState, useEffect} from "react";
-import headerMenu from "../../util/components/menuTrigger.js";
 import Link from "next/link";
 import { useIntl } from 'react-intl'
 import Language from "./Language";
 
 const Header = ({isPost}) => {
   const intl = useIntl();
+  const [menuIsActive, setMenuIsActive] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [isScrollOK, setIsScrollOK] = useState(false);
-  useEffect(() => {
-    headerMenu();
-  },[]);
   useEffect(() => {
     const onScroll = e => {
       setScrollTop(e.target.documentElement.scrollTop);
@@ -28,8 +25,18 @@ const Header = ({isPost}) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
+  const handleMenu = () => {
+    console.log(menuIsActive);
+    if(menuIsActive) {
+      setMenuIsActive(false)
+    } else {
+      setMenuIsActive(true)
+    }
+   
+  }
+  
   return ( 
-    <header className="f-header js-f-header position-fixed">
+    <header className={`f-header js-f-header position-fixed ${menuIsActive ? 'f-header--expanded': null}`}>
       <div className="f-header__mobile-content container max-width-lg">
         <Link href="/">
           <a className={isScrollOK ? 'f-header__logo active' : 'f-header__logo'}>
@@ -42,12 +49,12 @@ const Header = ({isPost}) => {
             </a>
         </Link>
 
-        <button className="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
-          <i className="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+        <button onClick={() => handleMenu()} className={`reset anim-menu-btn f-header__nav-control ${menuIsActive ? 'anim-menu-btn--state-b' : null}`}>
+          <i className="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden={menuIsActive}></i>
         </button>
       </div>
-
-      <div className="f-header__nav" role="navigation">
+      
+      <div className={`f-header__nav ${menuIsActive ? 'f-header__nav--is-visible' : null}`} role="navigation">
         <div className="f-header__nav-grid justify-between@md container max-width-lg">
           <div className={isScrollOK ? 'f-header__nav-logo-wrapper flex-grow flex-basis-0 active' : 'f-header__nav-logo-wrapper flex-grow flex-basis-0'}>
             <Link href="/">
@@ -62,7 +69,7 @@ const Header = ({isPost}) => {
             </Link>
           </div>
 
-          <ul className="f-header__list navbar-menu-primary ">
+          <ul className="f-header__list navbar-menu-primary">
               <li className="f-header__item"><Link href="/"><a className="f-header__link"> {intl.formatMessage({ id: "home" })} </a></Link></li>
               {intl.locale === 'es' 
               ? 

@@ -375,7 +375,14 @@
 .navbar-menu {
  .navbar-menu-primary {
    margin-right: var(--space-md);
+  
  }
+}
+
+.navbar-menu-primary {
+  @include breakpoint(sm, "not all") {
+    margin-bottom: var(--space-sm);
+  }
 }
 
 .f-header__item {
