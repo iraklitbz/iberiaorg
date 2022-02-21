@@ -80,6 +80,7 @@ const Header = ({isPost}) => {
                         <li><Link href="/category/news"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "news" })} </a></Link></li>
                         <li><Link href="/category/events"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "events" })} </a></Link></li>
                         <li><Link href="/category/activities"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "activities" })} </a></Link></li>
+                        <li><Link href="/category/curiosidades"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "curiosidades" })} </a></Link></li>
                         <li><Link href="/category/programs"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "programs" })} </a></Link></li>
                         <li><Link href="/category/tours"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "tours" })} </a></Link></li>
                       </ul>
@@ -99,6 +100,7 @@ const Header = ({isPost}) => {
                     <li><Link href="/geo-category/news"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "news" })} </a></Link></li>
                     <li><Link href="/geo-category/events"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "events" })} </a></Link></li>
                     <li><Link href="/geo-category/activities"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "activities" })} </a></Link></li>
+                    <li><Link href="/geo-category/curiosidades"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "curiosidades" })} </a></Link></li>
                     <li><Link href="/geo-category/programs"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "programs" })} </a></Link></li>
                     <li><Link href="/geo-category/tours"><a className="f-header__dropdown-link"> {intl.formatMessage({ id: "tours" })} </a></Link></li>
                   </ul>

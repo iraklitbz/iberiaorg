@@ -116,6 +116,11 @@
 @include breakpoint(md) {
   .hiw-list__item:nth-child(2n) .hiw-list__content {
     flex-direction: row-reverse;
+    p {
+      br {
+        margin-bottom: var(--space-xs);
+      }
+    }
   }
 }
 
