@@ -70,7 +70,7 @@ export default function Home({posts}) {
             <ul className="flex flex-wrap gap-lg flex-center logo-banners">
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/UBU.png" alt="logo universidad burgos" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/rioja.gif" alt="logo universidad" /></li>
-                <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/seu.svg" alt="imagen universidad" /></li>
+                <li className="small-logo"><img src="https://iberiainfo.me/wp-content/uploads/2022/02/seu.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/logo_ihdemu.jpg" alt="imagen universidad" /></li>
                 <li className="small-logo"><img src="https://iberiainfo.me/wp-content/uploads/2022/02/gau-en-2.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/logo-alter-eng.png" alt="imagen universidad" /></li>

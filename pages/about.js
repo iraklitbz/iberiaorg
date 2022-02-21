@@ -8,19 +8,23 @@ const AboutUs = () => {
   return (
    <MainLayout>
       <section className="position-relative z-index-1 ">
-        <div className="diagonal-section bg-contrast-lower bg-opacity-50% margin-top-md margin-bottom-xl" style={{backgroundImage: "url('https://iberiainfo.me/wp-content/uploads/2022/02/abstract5-scaled.jpg')"}}>
-          <div className="container max-width-adaptive-sm padding-y-xxxl">
-            <div className="text-center">
 
-              <div className="text-component margin-bottom-sm">
+
+      <div className="hero padding-y-xxxl" style={{backgroundImage: "url('https://iberiainfo.me/wp-content/uploads/2022/02/abstract5-scaled.jpg')"}}>
+            <div className="container max-width-adaptive-sm">
+              <div className="text-center">
+                
+                <div className="text-component margin-bottom-sm">
                 <h1>{intl.formatMessage({ id: "aboutus" })}</h1>
+                  <p>{intl.formatMessage({ id: "aboutus7" })}</p>
+                </div>
+            
+                
               </div>
-          
-              
             </div>
           </div>
-        </div>
-          <div className="container max-width-adaptive-md">
+
+          <div className="container max-width-adaptive-md margin-top-xl">
            
             <ol className="hiw-list">
               <li className="hiw-list__item">

@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import Header from "../components/Header/Header";
-import Footer from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import { useIntl } from "react-intl";
 
 const MainLayout = ({children, className, isPost}) => {

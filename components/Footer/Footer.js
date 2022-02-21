@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="container max-width-lg">
         <div className="grid gap-lg">
           <div className="col-3@lg order-2@lg text-right@lg">
-            <Link href="/" className="f-header__logo normal-logo">
-              <a>
+            <Link href="/">
+              <a className="f-header__logo normal-logo">
                   <div className="small-logo-icon">
                     <img width="45px" height="45px" src="https://iberiainfo.me/wp-content/uploads/2022/02/logo_iberia_icon.svg" />
                   </div>
@@ -25,7 +25,7 @@ const Footer = () => {
             
     
               <li className="col-6@xs col-3@md">
-                <h4 className="margin-bottom-sm">Mapa de web</h4>
+                <h4 className="margin-bottom-sm">{intl.formatMessage({ id: "mapaweb" })}</h4>
                 <ul className="grid gap-xs">
                   <li className="f-header__item"><Link href="/"><a> {intl.formatMessage({ id: "home" })} </a></Link></li>
                   <li className="f-header__item"><Link href="/about"><a> {intl.formatMessage({ id: "aboutus" })} </a></Link></li>
@@ -35,31 +35,31 @@ const Footer = () => {
               </li>
 
               <li className="col-6@xs col-3@md">
-                <h4 className="margin-bottom-sm">Noticias</h4>
+                <h4 className="margin-bottom-sm">{intl.formatMessage({ id: "news" })}</h4>
               
                 {intl.locale === 'es' 
                 ?
                 <ul className="grid gap-xs">
-                    <li><Link href="/news"><a> {intl.formatMessage({ id: "news" })} </a></Link></li>
-                    <li><Link href="/events"><a> {intl.formatMessage({ id: "events" })} </a></Link></li>
-                    <li><Link href="/activities"><a> {intl.formatMessage({ id: "activities" })} </a></Link></li>
-                    <li><Link href="/programs"><a> {intl.formatMessage({ id: "programs" })} </a></Link></li>
-                  <li><Link href="/tours"><a> {intl.formatMessage({ id: "tours" })} </a></Link></li>
+                    <li><Link href="/categorynews"><a> {intl.formatMessage({ id: "news" })} </a></Link></li>
+                    <li><Link href="/category/events"><a> {intl.formatMessage({ id: "events" })} </a></Link></li>
+                    <li><Link href="/category/activities"><a> {intl.formatMessage({ id: "activities" })} </a></Link></li>
+                    <li><Link href="/category/programs"><a> {intl.formatMessage({ id: "programs" })} </a></Link></li>
+                  <li><Link href="/category/tours"><a> {intl.formatMessage({ id: "tours" })} </a></Link></li>
                   </ul>
                   :
                   <ul className="grid gap-xs">
-                    <li><Link href="/news-ge"><a> {intl.formatMessage({ id: "news" })} </a></Link></li>
-                    <li><Link href="/events-ge"><a> {intl.formatMessage({ id: "events" })} </a></Link></li>
-                    <li><Link href="/activities-ge"><a> {intl.formatMessage({ id: "activities" })} </a></Link></li>
-                    <li><Link href="/programs-ge"><a> {intl.formatMessage({ id: "programs" })} </a></Link></li>
-                    <li><Link href="/tours-ge"><a> {intl.formatMessage({ id: "tours" })} </a></Link></li>
+                    <li><Link href="/geo-category/news-ge"><a> {intl.formatMessage({ id: "news" })} </a></Link></li>
+                    <li><Link href="/geo-category/events-ge"><a> {intl.formatMessage({ id: "events" })} </a></Link></li>
+                    <li><Link href="/geo-category/activities-ge"><a> {intl.formatMessage({ id: "activities" })} </a></Link></li>
+                    <li><Link href="/geo-category/programs-ge"><a> {intl.formatMessage({ id: "programs" })} </a></Link></li>
+                    <li><Link href="/geo-categorytours-ge"><a> {intl.formatMessage({ id: "tours" })} </a></Link></li>
                   </ul>
                 }
               
               </li>
     
               <li className="col-6@xs col-3@md">
-                <h4 className="margin-bottom-sm">{intl.formatMessage({ id: "footer" })}:</h4>
+                <h4 className="margin-bottom-sm">{intl.formatMessage({ id: "footer" })}</h4>
                 <ul className="grid gap-xs social-net">
                   <li><Link href="/"><a className="main-footer__link"> <i className="bx-pull-left bx bxl-facebook bx-sm"></i> Facebook  </a></Link></li>
                   <li><Link href="/"><a className="main-footer__link"> <i className="bx-pull-left bx bxl-twitter  bx-sm"></i> Twitter </a></Link></li>
