@@ -95,9 +95,9 @@ const Ourteam = ({pageContext}) => {
 
                                 <div className="card-v13__separator margin-x-auto margin-y-sm" role="presentation"></div>
 
-                                <p className="color-contrast-medium text-sm line-height-lg">{element.cargo}</p>
+                                <p className="color-contrast-medium text-sm line-height-lg" dangerouslySetInnerHTML={{__html: element.cargo}}></p>
 
-                                <div className="margin-top-sm">
+                                {/* <div className="margin-top-sm">
                                 {element.hasContact 
                                 ? 
                                 <Link href={element.contactUrl}>
@@ -115,7 +115,7 @@ const Ourteam = ({pageContext}) => {
                                 null
                                 }   
                                 
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                    ))}

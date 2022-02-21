@@ -242,6 +242,13 @@ Usage: codyhouse.co/license
 
   .card-v13 {
     --transition-duration: .3s;
+    p {
+      a {
+        font-weight: bold;
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+    }
   }
   
   .card-v13__figure-wrapper {

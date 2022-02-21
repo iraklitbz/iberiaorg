@@ -86,7 +86,7 @@ const Header = ({isPost}) => {
                     </li>
                     : 
                     <li className="f-header__item">
-                    <Link href={`/news-ge`}>
+                    <Link href={`/geo-category/news`}>
                       <a className="f-header__link">
                         <span>{intl.formatMessage({ id: "news" })}</span>
                         <svg className="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12">
