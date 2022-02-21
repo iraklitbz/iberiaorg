@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }) {
       <IntlProvider messages={messages} locale={locale} defaultLocale={defaultLocale}>
           <Head>
             <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+            <link rel="shortcut icon" href="https://iberiainfo.me/wp-content/uploads/2022/02/favicon.ico" />
           </Head>
           <Component {...pageProps} />
       </IntlProvider>

@@ -10,7 +10,7 @@ const HomeList = ({posts}) => {
                     <h1 className="text-center">{intl.formatMessage({ id: "home4" })}</h1>
                     </div>
 
-                    <div className="grid gap-sm">
+                    <div className="grid gap-sm movil-scroll">
                   
                     {posts.map((element => (
                         <Link key={element.id} href={intl.locale === 'es' ? `/news/${element.slug}` :  `/geo-news/${element.slug}`} aria-label="Link description">

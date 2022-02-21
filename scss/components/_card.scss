@@ -339,3 +339,13 @@ Usage: codyhouse.co/license
       background-position: 0% calc(100% - 0.05em);
     }
   }
+@include breakpoint(sm, "not all") {
+    .movil-scroll {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      padding-bottom: var(--space-xs);
+      > * {
+        min-width: 280px;
+      }
+    }
+}

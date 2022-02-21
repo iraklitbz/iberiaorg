@@ -287,16 +287,23 @@
 }
 .logo-banners {
   li {
-    max-width: 60%;
-    img {
-      max-width: 250px;
-    }
+    max-width: 40%;
     @include breakpoint(sm) {
-      max-width: 30%;
+      max-width: 40%;
     }
+    img {
+      max-width: 100%;
+      @include breakpoint(sm) {
+        max-width: 250px;
+      }
+    }
+ 
     &.small-logo{
      img {
-      max-width: 160px;
+      max-width: 100%;
+      @include breakpoint(sm) {
+        max-width: 160px;
+      }
      }
     }
  
