@@ -61,6 +61,10 @@
       font-size: 1.3rem;
       color: #3f3a5a;
       line-height: 1.4;
+      margin-top: var(--space-sm);
+      br {
+        margin-bottom: var(--space-xs);
+      }
     }
   }
 

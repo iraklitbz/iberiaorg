@@ -61,6 +61,13 @@ Usage: codyhouse.co/license
 
   will-change: clip-path;
   transition: clip-path var(--card-v12-transition-duration);
+  .noImagen {
+    height: 100%;
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
 
   img {
     will-change: transform;

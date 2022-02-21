@@ -3,6 +3,7 @@ import "../scss/main.scss";
 import { IntlProvider } from 'react-intl';
 import { useRouter } from "next/router"
 import { client } from "../lib/wordpress/client";
+import Head from 'next/head'
 
 import { ApolloProvider } from "@apollo/client";
 const languages = {
@@ -24,6 +25,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
       <IntlProvider messages={messages} locale={locale} defaultLocale={defaultLocale}>
+          <Head>
+            <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+          </Head>
           <Component {...pageProps} />
       </IntlProvider>
     </ApolloProvider>
