@@ -15,12 +15,12 @@ const Privacidad = () => {
             
               <p>Los datos que se recojan o nos facilites voluntariamente por medio de la Página Web, ya sea por la navegación en la misma, así como todos aquellos que nos puedas facilitar en los formularios de contacto, vía email o por teléfono, serán recabados y tratados por el Responsable del Tratamiento, cuyos datos se indican a continuación:</p>
             
-              <p>Iberia.org ( Sara Isabel González Díaz de Villafranca) NIF: 03142611Y Domicilio: C/ Muro, 07011 Palma de Mallorca, Illes Balears</p>
+              <p>Iberia.org ( Kety Gorgiladze) NIE: X2824455D Domicilio: C/ cantaperdiz 38, Jadraque</p>
             
               <h2>Contacto en Iberia.org para la protección de tus datos personales</h2>
               <ul className="list list--ul">
-                <li>Tfno: 747496404</li>
-                <li>Mail: camaradegeorgia@gmail.com </li>
+                <li>Tfno: 722512017</li>
+                <li>Mail: asociacioniberia@gmail.com </li>
               </ul>
             
               <p>Si, por cualquier motivo, quieres ponerte en contacto con nosotros en cualquier cuestión relacionada con el tratamiento de sus datos personales o privacidad (con nuestro Delegado de Protección de Datos), puedes hacerlo a través de cualquiera de los medios indicados anteriormente.</p>

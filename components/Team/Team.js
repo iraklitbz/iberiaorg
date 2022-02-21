@@ -27,19 +27,19 @@ const Team = () => {
                       <div className="diamond-grid__inner">
 
                           <div className="diamond-grid__item bg-contrast-lower shadow-md">
-                          <img className="diamond-grid__img" src="../../../app/assets/img/diamond-grid-img-1.jpg" alt="Image description" />
+                          <img className="diamond-grid__img" src="https://iberiainfo.me/wp-content/uploads/2022/02/kety.jpg" alt="Image description" />
                           </div>
 
                           <div className="diamond-grid__item bg-contrast-lower shadow-md">
-                          <img className="diamond-grid__img" src="../../../app/assets/img/diamond-grid-img-2.jpg" alt="Image description" />
+                          <img className="diamond-grid__img" src="https://iberiainfo.me/wp-content/uploads/2022/02/ani.jpg" alt="Image description" />
                           </div>
 
                           <div className="diamond-grid__item bg-contrast-lower shadow-md">
-                          <img className="diamond-grid__img" src="../../../app/assets/img/diamond-grid-img-3.jpg" alt="Image description" />
+                          <img className="diamond-grid__img" src="https://iberiainfo.me/wp-content/uploads/2022/02/Lana.jpg" alt="Image description" />
                           </div>
 
                           <div className="diamond-grid__item bg-contrast-lower shadow-md">
-                          <img className="diamond-grid__img" src="../../../app/assets/img/diamond-grid-img-4.jpg" alt="Image description" />
+                          <img className="diamond-grid__img" src="https://iberiainfo.me/wp-content/uploads/2022/02/kety2.jpg" alt="Image description" />
                           </div>
 
                       </div>

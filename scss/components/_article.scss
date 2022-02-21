@@ -294,6 +294,11 @@
     @include breakpoint(sm) {
       max-width: 30%;
     }
+    &.small-logo{
+     img {
+      max-width: 160px;
+     }
+    }
  
   }
 }

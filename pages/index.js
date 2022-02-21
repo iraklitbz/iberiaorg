@@ -28,7 +28,7 @@ export default function Home({posts}) {
           
                   <div className="text-component">
                     <h2 className="special-headline" dangerouslySetInnerHTML={{__html: intl.formatMessage({id: 'home5'})}}></h2>
-                    <p>{intl.formatMessage({ id: "home6" })}</p>
+                    <p>{intl.locale === 'ge' ? intl.formatMessage({ id: "home6" }) : null}</p>
                   </div>
         
                   <div className="margin-top-lg">
@@ -72,7 +72,7 @@ export default function Home({posts}) {
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/rioja.gif" alt="logo universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/seu.svg" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/logo_ihdemu.jpg" alt="imagen universidad" /></li>
-                <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/gau-en-2.png" alt="imagen universidad" /></li>
+                <li className="small-logo"><img src="https://iberiainfo.me/wp-content/uploads/2022/02/gau-en-2.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/logo-alter-eng.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/cyleon.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/cauc.png" alt="imagen universidad" /></li>

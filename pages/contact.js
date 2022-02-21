@@ -176,15 +176,16 @@ return (
                           <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
                           <h6 className="font-bold margin-bottom-xxs">{intl.formatMessage({ id: "contactemail" })}</h6>
                           <dd>
-                              <a href="mailto:camaradegeorgia@gmail.com">camaradegeorgia@gmail.com</a>
+                              <a href="mailto:asociacioniberia@gmail.com">asociacioniberia@gmail.com</a>
                           </dd>
                           </div>
                       
                           <div className="details-list__item padding-y-md padding-x-md@md text-center@md col-6@md">
                           <h6 className="font-bold margin-bottom-xxs">{intl.formatMessage({ id: "contactphone" })}</h6>
                           <p className="line-height-md">
-                              <p><a href="tel:+34747446393">+34 747 44 63 93</a></p>
-                              <p><a href="tel:++34747496404">+34 747 49 64 04</a></p>
+                              <p><a href="tel:+995599634393">+995 599 634 393</a></p>
+                              <p><a href="tel:+995557626240">+995 557 626 240</a></p>
+                              <p><a href="tel:+34722512017"> +34 722 512 017</a></p>
                           </p>
                           </div>
                       </div>
