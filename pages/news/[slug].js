@@ -57,6 +57,7 @@ const Post = ({data}) => {
                   <div className="text-component line-height-lg text-space-y-md article-box" dangerouslySetInnerHTML={{ __html: data?.content }} />
                   
               </div>
+              <div className="clearfix"></div>
           </article>
       </MainLayout>
    );
