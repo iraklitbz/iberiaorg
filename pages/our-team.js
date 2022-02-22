@@ -64,6 +64,15 @@ const Ourteam = ({pageContext}) => {
             hasContact: true,
             contact: 'twitter',
             contactUrl: 'loram'
+        },
+        {
+            id: '8',
+            name: intl.formatMessage({ id: "ourteam_team8_1" }),
+            profileUrl: 'https://iberiainfo.me/wp-content/uploads/2022/02/IMG-9514.jpg',
+            cargo: intl.formatMessage({ id: "ourteam_team8_2" }),
+            hasContact: true,
+            contact: 'twitter',
+            contactUrl: 'loram'
         }
     ])
     return ( 
@@ -79,23 +88,17 @@ const Ourteam = ({pageContext}) => {
                     <div className="margin-bottom-xl">
                         <h2 className="text-center">{intl.formatMessage({ id: "ourteam" })}</h2>
                     </div>
-                    <div className="grid gap-xl">
+                    <div className="grid gap-sm">
                    {ourTeamArray.map(element => (
-                        <div key={element.id} className="card-v13 col-4@md">
-                            <div className="card-v13__figure-wrapper">
-                                <figure className="card-v13__figure">
-                                    <img src={element.profileUrl} alt="Image description" loading="lazy" />
-                                </figure>
-                            </div>
-
-                            <div className="text-center margin-top-sm">
-                                <h3 className="text-md">
-                                <span className="color-contrast-higher">{element.name}</span>
-                                </h3>
-
-                                <div className="card-v13__separator margin-x-auto margin-y-sm" role="presentation"></div>
-
-                                <p className="color-contrast-medium text-sm line-height-lg" dangerouslySetInnerHTML={{__html: element.cargo}}></p>
+                        <div key={element.id} className="card-v2 card-v2--blur-fx radius-md col-3@md">
+                          
+                            <figure>
+                                <img src={element.profileUrl} alt="Image description" loading="lazy" />
+                                <figcaption class="card-v2__caption padding-sm text-center">
+                                    <div class="text-md text-base@md">{element.name}</div>
+                                    <div class="margin-top-xxxs text-xs" dangerouslySetInnerHTML={{__html: element.cargo}}></div>
+                                </figcaption>
+                            </figure>
 
                                 {/* <div className="margin-top-sm">
                                 {element.hasContact 
@@ -116,11 +119,10 @@ const Ourteam = ({pageContext}) => {
                                 }   
                                 
                                 </div> */}
-                            </div>
+                      
                         </div>
                    ))}
                    
-                        
                        
                     </div>
                     </div>
