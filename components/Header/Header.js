@@ -49,9 +49,13 @@ const Header = ({isPost}) => {
             </a>
         </Link>
 
-        <button onClick={() => handleMenu()} className={`reset anim-menu-btn f-header__nav-control ${menuIsActive ? 'anim-menu-btn--state-b' : null}`}>
-          <i className="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden={menuIsActive}></i>
-        </button>
+        <div className="flex">
+          {!isPost ? <Language /> : null}
+
+          <button onClick={() => handleMenu()} className={`reset anim-menu-btn f-header__nav-control margin-left-xs ${menuIsActive ? 'anim-menu-btn--state-b' : null}`}>
+            <i className="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden={menuIsActive}></i>
+          </button>
+        </div>
       </div>
       
       <div className={`f-header__nav ${menuIsActive ? 'f-header__nav--is-visible' : null}`} role="navigation">
@@ -119,7 +123,9 @@ const Header = ({isPost}) => {
               <li className="f-header__item"><Link href="/contact"><a className="f-header__link">{ intl.formatMessage({ id: "contactus" })} </a></Link></li>
             </ul>
         
-            {!isPost ? <Language /> : null}
+            <div className="display@sm">
+              {!isPost ? <Language /> : null}
+            </div>
          </div>
         </div>
  
