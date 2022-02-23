@@ -99,6 +99,7 @@ export async function getStaticProps({params}){
         content
         slug
         id
+        date
         title
         featuredImage {
           node {

@@ -23,6 +23,7 @@ const GET_GEO_POSTS = gql`
                       title
                       slug
                       content
+                      date
                       excerpt
                       id
                       featuredImage {

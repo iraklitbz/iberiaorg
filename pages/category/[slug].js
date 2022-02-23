@@ -20,6 +20,7 @@ query getPosts($first: Int, $slug: String!, $after: String) {
       node {
         content
         slug
+        date
         id
         title
         featuredImage {

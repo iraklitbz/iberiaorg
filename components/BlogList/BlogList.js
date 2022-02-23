@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useIntl } from 'react-intl'
 const BlogList = ({posts, hasNextPage, endCursor, loading, fetchMore}) => {
     const intl = useIntl();
-    console.log(posts)
     return ( 
         <div className="position-relative z-index-1 padding-y-xl">
             <div className="container max-width-adaptive-lg">
@@ -32,7 +31,7 @@ const BlogList = ({posts, hasNextPage, endCursor, loading, fetchMore}) => {
                         <div className="margin-bottom-xs">
                             <Link href={intl.locale === 'es' ? `/news/${element.node.slug}` : `/geo-news/${element.node.slug}`}>
                               <a className="story__category">
-                                <i><time>{moment(posts[0].date).format('DD-MM-YYYY')}</time></i>
+                                <i><time>{moment(element.node.date).format('DD-MM-YYYY')}</time></i>
                              </a>
                             </Link>
                         </div>
