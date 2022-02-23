@@ -26,7 +26,6 @@ const Header = ({isPost}) => {
   }, [scrollTop]);
 
   const handleMenu = () => {
-    console.log(menuIsActive);
     if(menuIsActive) {
       setMenuIsActive(false)
     } else {
