@@ -9,8 +9,8 @@ const Geopost = ({data}) => {
   return ( 
     <MainLayout 
         pageTitle={data?.title} 
-        description={data?.excerpt} 
-        previewImage={data?.featuredImage.node.sourceUrl}>
+        description={data?.excerpt ? data?.excerpt : null} 
+        previewImage={data?.featuredImage ? data?.featuredImage.node.sourceUrl : null}>
           <article>
               <div className="feature-v5 padding-bottom-lg">
                   <div className="feature-v5__content padding-top-xl bg-iberia bg-opacity-20% position-relative">

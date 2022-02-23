@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 const MainLayout = ({children, className, isPost, pageTitle, description, previewImage}) => {
   const intl = useIntl();
   const router = useRouter()
-  console.log(router)
   useEffect(() => {
     if(intl.locale === 'es') {
       document.getElementsByTagName("body")[0].classList.remove("ge");
@@ -28,7 +27,7 @@ const MainLayout = ({children, className, isPost, pageTitle, description, previe
           <meta charSet="utf-8" />
          
           <meta name="description" content={description} />
-          <meta property="og:url" content={`${router.basePath}/${router.asPath}`} key="ogurl" />
+          <meta property="og:url" content={`${router?.basePath}/${router?.asPath}`} key="ogurl" />
           <meta property="og:image" content={previewImage} key="ogimage" />
           <meta property="og:site_name" content="Iberia" key="ogsitename" />
           <meta property="og:title" content={pageTitle} key="ogtitle" />
