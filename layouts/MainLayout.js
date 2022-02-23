@@ -26,8 +26,8 @@ const MainLayout = ({children, className, isPost, pageTitle, description, previe
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
          
-          <meta name="description" content={description} />
-          <meta property="og:url" content={`${router?.basePath}/${router?.asPath}`} key="ogurl" />
+          <meta name="description" content={description}  />
+          <meta property="og:url" content={`https://www.iberiainfo.org${router?.asPath}`} key="ogurl" />
           <meta property="og:image" content={previewImage} key="ogimage" />
           <meta property="og:site_name" content="Iberia" key="ogsitename" />
           <meta property="og:title" content={pageTitle} key="ogtitle" />
