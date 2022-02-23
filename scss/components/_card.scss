@@ -362,7 +362,7 @@
   min-height: 145px;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(alpha(var(--color-secundary), 0), alpha(var(--color-secundary), 1));
+  background: linear-gradient(alpha(var(--color-black), 0), alpha(var(--color-black), 1));
   background-blend-mode: multiply;
   display: flex;
   align-items: center;
@@ -382,7 +382,7 @@
 // --blurred-img
 .card-v2--blur-fx {
   .card-v2__caption {
-    background: alpha(var(--color-primary), 0.8);
+    background: alpha(var(--color-black), 0.8);
     backdrop-filter: blur(10px);
   }
 }

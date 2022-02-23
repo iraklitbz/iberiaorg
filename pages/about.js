@@ -7,22 +7,11 @@ const AboutUs = () => {
   const intl = useIntl();
   return (
    <MainLayout>
+      <Team />
       <section className="position-relative z-index-1 ">
 
 
-      <div className="hero padding-y-xxxl" style={{backgroundImage: "url('https://iberiainfo.me/wp-content/uploads/2022/02/abstract5-scaled.jpg')"}}>
-            <div className="container max-width-adaptive-sm">
-              <div className="text-center">
-                
-                <div className="text-component margin-bottom-sm">
-                <h1>{intl.formatMessage({ id: "aboutus" })}</h1>
-                  <p>{intl.formatMessage({ id: "aboutus7" })}</p>
-                </div>
-            
-                
-              </div>
-            </div>
-          </div>
+     
 
           <div className="container max-width-adaptive-md margin-top-xl">
            
@@ -95,8 +84,9 @@ const AboutUs = () => {
               </li>
             </ol>
           </div>
+          
         </section>
-        <Team />
+    
    </MainLayout>
   )
 }

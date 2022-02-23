@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useIntl } from 'react-intl'
 import MainLayout from "../layouts/MainLayout";
 import Bradcrumbs from "../components/Breadcrumbs/Breadcrumbs";
-const Ourteam = ({pageContext}) => {
+const Ourteam = ({}) => {
     const intl = useIntl();
     const [ourTeamArray, setOurTeamArray] = useState([
         {

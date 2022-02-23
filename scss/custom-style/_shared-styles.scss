@@ -2,7 +2,7 @@
 
 :root {
   --radius: 0.25em; // border radius base size
-
+}
 .hover\:reduce-opacity {
   opacity: 1;
   transition: all 0.3s ease;
@@ -40,9 +40,3 @@
     color: var(--color-primary);
   }
 }
-
-// --------------------------------
-
-// (END) Global editor code
-
-// --------------------------------
