@@ -25,7 +25,7 @@ const Service = () => {
 
                 <div className="card-v8 bg radius-lg">
                   <figure>
-                    <img src="https://codyhouse.co/app/assets/img/feature-v8-img-1.jpg" alt="Image description" />
+                    <img src="https://iberiainfo.me/wp-content/uploads/2022/02/3-scaled.jpg" alt="Image description" />
                   </figure>
 
                   <footer className="padding-sm">
@@ -40,7 +40,7 @@ const Service = () => {
 
                 <div className="card-v8 bg radius-lg">
                   <figure>
-                    <img src="https://codyhouse.co/app/assets/img/feature-v8-img-2.jpg" alt="Image description" />
+                    <img src="https://iberiainfo.me/wp-content/uploads/2022/02/2-scaled.jpg" alt="Image description" />
                   </figure>
 
                   <footer className="padding-sm">
@@ -55,7 +55,7 @@ const Service = () => {
 
                 <div href="#0" className="card-v8 bg radius-lg">
                   <figure>
-                    <img src="https://codyhouse.co/app/assets/img/feature-v8-img-3.jpg" alt="Image description" />
+                    <img src="https://iberiainfo.me/wp-content/uploads/2022/02/1-scaled.jpg" alt="Image description" />
                   </figure>
 
                   <footer className="padding-sm">

@@ -34,7 +34,7 @@ const AboutUs = () => {
                   <div className="flex-grow">
                     <div className="hiw-list__content grid gap-md items-center@md">
                       <figure className="col-6@md">
-                        <img className="block width-100%" src="https://codyhouse.co/app/assets/img/how-it-works-img-1.png"  />
+                        <img className="block width-100%" src="https://iberiainfo.me/wp-content/uploads/2022/02/how-it-works-img-1.png"  />
                       </figure>
               
                       <div className="col-6@md">
@@ -55,7 +55,7 @@ const AboutUs = () => {
                   <div className="flex-grow">
                     <div className="hiw-list__content grid gap-md items-center@md">
                       <figure className="col-6@md">
-                        <img className="block width-100%" src="https://codyhouse.co/app/assets/img/how-it-works-img-2.png"  />
+                        <img className="block width-100%" src="https://iberiainfo.me/wp-content/uploads/2022/02/how-it-works-img-2.png"  />
                       </figure>
               
                       <div className="col-6@md">
@@ -76,7 +76,7 @@ const AboutUs = () => {
                   <div className="flex-grow">
                     <div className="hiw-list__content grid gap-md items-center@md">
                       <figure className="col-6@md">
-                        <img className="block width-100%" src="https://codyhouse.co/app/assets/img/how-it-works-img-3.png"  />
+                        <img className="block width-100%" src="https://iberiainfo.me/wp-content/uploads/2022/02/how-it-works-img-3.png"  />
                       </figure>
               
                       <div className="col-6@md">
