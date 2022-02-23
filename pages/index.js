@@ -17,7 +17,10 @@ export default function Home({posts}) {
 
   return (
 
-      <MainLayout> 
+      <MainLayout
+        pageTitle={intl.formatMessage({ id: "indexTitle" })}
+        description={intl.formatMessage({ id: "indexDescription" })}
+      > 
        <Hero />
        <HomeList posts={posts} />
        <section className="position-relative z-index-1 margin-y-lg">

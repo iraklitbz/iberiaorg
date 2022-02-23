@@ -57,7 +57,7 @@ const Category = ({params}) => {
 
     if (!data && loading) {
       return (
-        <MainLayout>
+        <MainLayout pageTitle={params} >
           <div className="container max-width-adaptive-lg padding-y-xl text-center">
             <div className="circle-loader circle-loader--v2" role="alert">
               <p className="circle-loader__label">{intl.formatMessage({ id: "loading" })}</p>

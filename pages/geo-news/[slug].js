@@ -7,7 +7,10 @@ import {
 } from "@apollo/client";
 const Geopost = ({data}) => {
   return ( 
-    <MainLayout>
+    <MainLayout 
+        pageTitle={data?.title} 
+        description={data?.excerpt} 
+        previewImage={data?.featuredImage.node.sourceUrl}>
           <article>
               <div className="feature-v5 padding-bottom-lg">
                   <div className="feature-v5__content padding-top-xl bg-iberia bg-opacity-20% position-relative">

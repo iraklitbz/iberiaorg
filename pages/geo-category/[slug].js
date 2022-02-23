@@ -52,7 +52,9 @@ const Category = ({params}) => {
 
   if (error) {
     return (
-      <MainLayout>
+      <MainLayout
+        pageTitle={params} 
+      >
         <div className="container max-width-adaptive-lg padding-y-xl text-center">
           <h4 className="text-center">{intl.formatMessage({ id: "error_charge_news" })}</h4>
         </div>
