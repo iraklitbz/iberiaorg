@@ -33,7 +33,6 @@ const Contact = () => {
   })
   }
   const onSubmit = (e) => {
-    console.log('entro')
     if(checked){
       setMsgError(false);
       e.preventDefault();
