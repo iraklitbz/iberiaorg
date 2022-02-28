@@ -65,8 +65,8 @@ const Contact = () => {
               texto: ''
             })
             Swal.fire(
-              'Gracias', 
-              'El mensaje se ha enviado correctamente y nos pondremos en contacto contigo en breve',
+              `${intl.formatMessage({ id: "contact5" })}`, 
+              `${intl.formatMessage({ id: "contact6" })}`,
               'success'
             );
           },2000)
