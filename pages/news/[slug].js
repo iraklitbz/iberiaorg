@@ -1,11 +1,26 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import { client } from "../../lib/wordpress/client";
 import {
   gql
 } from "@apollo/client";
 const Post = ({data}) => {
+  if(data) {
+    useEffect(() => {
+      let images = document.getElementsByClassName('gt3-lazy-image');
+      let arr = [];
+      arr = [...images];
+      arr.forEach(element => {
+        element.removeAttribute('srcset')
+      });
+     
+      
+    },[data])
+  }
+
+
+
   return ( 
     <MainLayout 
       pageTitle={data?.title} 

@@ -6,6 +6,18 @@ import {
   gql
 } from "@apollo/client";
 const Geopost = ({data}) => {
+  if(data) {
+    useEffect(() => {
+      let images = document.getElementsByClassName('gt3-lazy-image');
+      let arr = [];
+      arr = [...images];
+      arr.forEach(element => {
+        element.removeAttribute('srcset')
+      });
+     
+      
+    },[data])
+  }
   return ( 
     <MainLayout 
         pageTitle={data?.title} 
