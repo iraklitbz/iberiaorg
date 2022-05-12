@@ -18,7 +18,7 @@ export default function Home({posts}) {
   return (
 
       <MainLayout
-        previewImage='https://iberiainfo.me/wp-content/uploads/2022/02/logo_iberia_icon.svg'
+        previewImage='https://iberiainfo.me/wp-content/uploads/2022/05/logo.png'
         pageTitle={intl.formatMessage({ id: "indexTitle" })}
         description={intl.formatMessage({ id: "indexDescription" })}
       > 
