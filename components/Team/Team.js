@@ -24,7 +24,7 @@ const Team = ({ }) => {
         {
             id: '3',
             name: intl.formatMessage({ id: "ourteam_team3_1" }),
-            profileUrl: 'https://iberiainfo.me/wp-content/uploads/2022/02/marcel.jpg',
+            profileUrl: 'http://cms.iberiainfo.me/wp-content/uploads/2023/06/tako.jpg',
             cargo: intl.formatMessage({ id: "ourteam_team3_2" }),
             hasContact: true,
             contact: 'twitter',
@@ -33,7 +33,7 @@ const Team = ({ }) => {
         {
             id: '4',
             name: intl.formatMessage({ id: "ourteam_team4_1" }),
-            profileUrl: 'https://iberiainfo.me/wp-content/uploads/2022/02/kety2.jpg',
+            profileUrl: 'http://cms.iberiainfo.me/wp-content/uploads/2023/06/magda.jpg',
             cargo: intl.formatMessage({ id: "ourteam_team4_2" }),
             hasContact: true,
             contact: 'facebook',
@@ -67,7 +67,7 @@ const Team = ({ }) => {
         {
             id: '8',
             name: intl.formatMessage({ id: "ourteam_team8_1" }),
-            profileUrl: 'https://iberiainfo.me/wp-content/uploads/2022/02/IMG-9514.jpg',
+            profileUrl: 'http://cms.iberiainfo.me/wp-content/uploads/2023/06/hugo.jpg',
             cargo: intl.formatMessage({ id: "ourteam_team8_2" }),
             hasContact: true,
             contact: 'twitter',
@@ -76,7 +76,7 @@ const Team = ({ }) => {
         {
             id: '9',
             name: intl.formatMessage({ id: "ourteam_team9_1" }),
-            profileUrl: 'https://iberiainfo.me/wp-content/uploads/2022/06/mariam.jpg',
+            profileUrl: 'http://cms.iberiainfo.me/wp-content/uploads/2023/06/manu.jpg',
             cargo: intl.formatMessage({ id: "ourteam_team9_2" }),
             hasContact: true,
             contact: 'twitter',
