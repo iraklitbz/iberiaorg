@@ -73,12 +73,17 @@ export default function Home({posts}) {
           <h2 className="text-center">{intl.formatMessage({ id: "home9" })}</h2>
           <div className="margin-top-lg">
             <ul className="flex flex-wrap gap-lg flex-center logo-banners">
+                <li><img src="http://cms.iberiainfo.me/wp-content/uploads/2023/08/hablamos.png" alt="logo hablamos escuela" /></li>
+                <li><img src="http://cms.iberiainfo.me/wp-content/uploads/2023/08/logo-ua.jpg" alt="logo universidad alicante" /></li>
+                <li><img src="http://cms.iberiainfo.me/wp-content/uploads/2023/08/escudouva.png" alt="logo universidad valladolid" /></li>
+                <li><img src="http://cms.iberiainfo.me/wp-content/uploads/2023/08/escola.png" alt="logo universidad enoturismo" /></li>
+                <li><img src="http://cms.iberiainfo.me/wp-content/uploads/2023/08/logo-um-peq.png" alt="logo universidad murcia" /></li>
+                <li><img src="http://cms.iberiainfo.me/wp-content/uploads/2023/08/aia.jpg" alt="logo universidad murcia" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/UBU.png" alt="logo universidad burgos" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/rioja.gif" alt="logo universidad" /></li>
                 <li className="small-logo"><img src="https://iberiainfo.me/wp-content/uploads/2022/02/seu.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/logo_ihdemu.jpg" alt="imagen universidad" /></li>
                 <li className="small-logo"><img src="https://iberiainfo.me/wp-content/uploads/2022/02/gau-en-2.png" alt="imagen universidad" /></li>
-                <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/logo-alter-eng.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/cyleon.png" alt="imagen universidad" /></li>
                 <li><img src="https://iberiainfo.me/wp-content/uploads/2022/02/cauc.png" alt="imagen universidad" /></li>
             </ul>
