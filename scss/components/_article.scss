@@ -306,6 +306,16 @@
       }
      }
     }
+    &.primary-logo{
+      img {
+        min-width: 150px;
+       max-width: 100%;
+       @include breakpoint(sm) {
+          min-width: 100px;
+         max-width: 140px;
+       }
+      }
+     }
  
   }
 }
