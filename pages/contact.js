@@ -145,7 +145,7 @@ const Contact = () => {
                       <input onChange={() => handleCheckClick()} className="custom-checkbox__input" type="checkbox" aria-label="Checkbox label" />
                       <div className="custom-checkbox__control" aria-hidden="true"></div>
                     </div>
-                    <p>{intl.formatMessage({ id: "contact3" })} <Link href="/politica-de-privacidad"><a> {intl.formatMessage({ id: "contactprivacity" })} </a></Link></p>
+                    <p>{intl.formatMessage({ id: "contact3" })} <Link href="/politica-de-privacidad"><span> {intl.formatMessage({ id: "contactprivacity" })} </span></Link></p>
                   </div>
                   {msgError ? <p className="error text--xs">{intl.formatMessage({ id: "contact4" })}</p> : null}
 

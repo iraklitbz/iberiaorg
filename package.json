@@ -9,28 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.5.9",
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
+    "@apollo/client": "^3.13.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "codyhouse-framework": "^3.0.1",
-    "dotenv": "^10.0.0",
-    "graphql": "^16.3.0",
-    "moment": "^2.29.1",
-    "next": "11.1.2",
-    "next-intl": "^2.4.0",
+    "dotenv": "^16.4.7",
+    "graphql": "^16.10.0",
+    "moment": "^2.29.3",
+    "next": "15.2.3",
+    "next-intl": "^4.0.2",
     "nodemailer": "^6.6.5",
-    "react": "^17.0.2",
-    "react-cookie": "^4.1.1",
-    "react-cookie-consent": "^7.2.1",
-    "react-dom": "17.0.2",
+    "react": "^19.0.0",
+    "react-cookie": "^8.0.1",
+    "react-cookie-consent": "^9.0.0",
+    "react-dom": "19.0.0",
     "react-helmet": "^6.1.0",
-    "react-intl": "^5.24.6",
+    "react-intl": "^7.1.6",
     "sass": "^1.42.1",
     "sendmail": "^1.6.1",
     "sweetalert2": "^11.1.7"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
-  }
+    "eslint": "9.23.0",
+    "eslint-config-next": "15.2.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

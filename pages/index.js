@@ -12,7 +12,7 @@ import {
 
 
 export default function Home({posts}) {
- 
+
   const intl = useIntl();
 
   return (
@@ -21,7 +21,7 @@ export default function Home({posts}) {
         previewImage='https://iberiainfo.me/wp-content/uploads/2022/05/logo.png'
         pageTitle={intl.formatMessage({ id: "indexTitle" })}
         description={intl.formatMessage({ id: "indexDescription" })}
-      > 
+      >
        <Hero />
        <HomeList posts={posts} />
        <section className="position-relative z-index-1 margin-y-lg">
@@ -30,12 +30,12 @@ export default function Home({posts}) {
             <div className="grid">
               <div className="flex items-center col-6@md">
                 <div className="padding-md padding-x-lg@lg padding-y-lg@lg">
-          
+
                   <div className="text-component">
                     <h2 className="special-headline" dangerouslySetInnerHTML={{__html: intl.formatMessage({id: 'home5'})}}></h2>
                     <p>{intl.locale === 'ge' ? intl.formatMessage({ id: "home6" }) : null}</p>
                   </div>
-        
+
                   <div className="margin-top-lg">
                   <ol className="list-v2 list-v2--icons">
                     <li>
@@ -60,7 +60,7 @@ export default function Home({posts}) {
                   </div>
                 </div>
               </div>
-        
+
               <figure className="col-6@md">
                 <img className="block width-100% height-100% object-cover" src="https://iberiainfo.me/wp-content/uploads/2022/02/abstract5-scaled.jpg" alt="imagen universidad" />
               </figure>
@@ -107,7 +107,7 @@ export default function Home({posts}) {
 
                       <div className="margin-top-sm">
                       <div className="flex flex-wrap gap-sm items-center">
-                          <Link href="/about"><a className="btn btn--primary"> {intl.formatMessage({ id: "aboutus6" })} </a></Link>
+                          <Link href="/about"><span className="btn btn--primary"> {intl.formatMessage({ id: "aboutus6" })} </span></Link>
 
                       </div>
                       </div>
@@ -146,7 +146,7 @@ export default function Home({posts}) {
 }
 
 export async function getStaticProps({locale}){
- 
+
   const GET_HOMEPAGE = gql`
       query MyQuery {
         posts(where: {categoryName: "home"}) {
@@ -202,8 +202,8 @@ export async function getStaticProps({locale}){
      const getDataGeo = data.geocategories.edges.map(({node}) => node);
      posts = getDataGeo[0].news.edges.map(element => element.node);
   }
- 
-  
+
+
   return {
     props: {
       posts
