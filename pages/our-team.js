@@ -109,26 +109,6 @@ const Ourteam = ({ }) => {
                                     </figcaption>
                                 </figure>
 
-                                {/* <div className="margin-top-sm">
-                                {element.hasContact
-                                ?
-                                <Link href={element.contactUrl}>
-                                  <a className="reset btn-fx-3 radius-md text-sm">
-                                    <div className="btn-fx-3__inner padding-y-xs padding-x-md">
-                                    <span>{intl.formatMessage({ id: "contactus" })}</span>
-
-                                    <figure className="btn-fx-3__icon-wrapper" aria-hidden="true">
-                                        <i className={`bx bxl-${element.contact} bx-sm`}></i>
-                                    </figure>
-                                    </div>
-                                  </a>
-                                </Link>
-                                :
-                                null
-                                }
-
-                                </div> */}
-
                             </div>
                         ))}
 

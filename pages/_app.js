@@ -4,7 +4,7 @@ import { IntlProvider } from 'react-intl';
 import { useRouter } from "next/router"
 import { client } from "../lib/wordpress/client";
 import Head from 'next/head'
-
+import { CookiesProvider } from 'react-cookie';
 import { ApolloProvider } from "@apollo/client";
 const languages = {
   es: require('../translations/es.json'),
@@ -29,7 +29,9 @@ function MyApp({ Component, pageProps }) {
             <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
             <link rel="shortcut icon" href="https://iberiainfo.me/wp-content/uploads/2022/02/favicon.ico" />
           </Head>
-          <Component {...pageProps} />
+          <CookiesProvider>
+            <Component {...pageProps} />
+        </CookiesProvider>
       </IntlProvider>
     </ApolloProvider>
   )

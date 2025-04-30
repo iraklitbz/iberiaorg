@@ -12,7 +12,6 @@ const BlogList = ({posts, hasNextPage, endCursor, loading, fetchMore}) => {
                 {posts?.map((element) => (
                     <article key={element.node.id} className="story col-4@md">
                         <Link href={intl.locale === 'es' ? `/news/${element.node.slug}` : `/geo-news/${element.node.slug}`}>
-                          <a className="story__img radius-md">
                             <figure className="aspect-ratio-4:3">
                                 {   element.node.featuredImage
                                 ?
@@ -24,15 +23,12 @@ const BlogList = ({posts, hasNextPage, endCursor, loading, fetchMore}) => {
                                 }
 
                             </figure>
-                        </a>
                         </Link>
 
                         <div className="story__content">
                         <div className="margin-bottom-xs">
                             <Link href={intl.locale === 'es' ? `/news/${element.node.slug}` : `/geo-news/${element.node.slug}`}>
-                              <a className="story__category">
                                 <i><time>{moment(element.node.date).format('DD-MM-YYYY')}</time></i>
-                             </a>
                             </Link>
                         </div>
 

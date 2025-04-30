@@ -3,7 +3,7 @@ import { useIntl } from "react-intl";
 import Link from "next/link";
 const HomeList = ({posts}) => {
     const intl = useIntl();
-    return ( 
+    return (
         <section className="position-relative z-index-1 padding-y-xl bg-cover bg-center">
                 <div className="container max-width-adaptive-lg">
                     <div className="margin-bottom-lg">
@@ -11,21 +11,21 @@ const HomeList = ({posts}) => {
                     </div>
 
                     <div className="grid gap-sm movil-scroll">
-                  
+
                     {posts.map((element => (
-                        <Link key={element.id} href={intl.locale === 'es' ? `/news/${element.slug}` :  `/geo-news/${element.slug}`} aria-label="Link description">
-                            <a className="card-v12 padding-top-sm radius-lg shadow-sm col-6@sm col-3@md">
+                        <Link key={element.id} href={intl.locale === 'es' ? `/news/${element.slug}` :  `/geo-news/${element.slug}`} className="card-v12 padding-top-sm radius-lg shadow-sm col-6@sm col-3@md" aria-label="Link description">
+                            <span>
                                 <div className="position-relative">
                                 <figure className="card-v12__figure radius-sm">
-                                {   element.featuredImage 
-                                ? 
+                                {   element.featuredImage
+                                ?
                                     <img src={element.featuredImage.node.sourceUrl} alt={element.title} />
-                                : 
+                                :
                                     <div className="noImagen radius-md">
                                         <img width="245px" src="https://iberiainfo.me/wp-content/uploads/2022/02/logo_iberia_icon.svg" />
                                     </div>
                                 }
-                                    
+
                                 </figure>
 
                                 <svg className="icon card-v12__icon" viewBox="0 0 60 60">
@@ -43,16 +43,16 @@ const HomeList = ({posts}) => {
                                 <div className="card-v12__separator border-top border-contrast-higher border-opacity-10% margin-x-auto margin-y-xs" role="presentation"></div>
 
                             </div>
-                        </a>
+                        </span>
                         </Link>
 
                     )))}
 
-                   
+
                     </div>
                 </div>
         </section>
      );
 }
- 
+
 export default HomeList;
