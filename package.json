@@ -16,7 +16,7 @@
     "dotenv": "16.4.7",
     "graphql": "16.10.0",
     "moment": "2.29.3",
-    "next": "15.2.3",
+    "next": "15.2.8",
     "next-intl": "4.0.2",
     "nodemailer": "6.6.5",
     "react": "19.0.0",
